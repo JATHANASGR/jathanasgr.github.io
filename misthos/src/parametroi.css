@@ -104,7 +104,7 @@ body
     linear-gradient(90deg,  var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
     linear-gradient(180deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
     linear-gradient(270deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
-    url("../images/ypodeigma50.png") -470px -330px no-repeat
+    url("/misthos/images/ypodeigma50.png") -470px -330px no-repeat
     ;
 }
 .image_sub_antir
@@ -114,7 +114,7 @@ body
     linear-gradient(90deg,  var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
     linear-gradient(180deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
     linear-gradient(270deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
-    url("../images/ypodeigma50.png") -460px -200px no-repeat
+    url("/misthos/images/ypodeigma50.png") -460px -200px no-repeat
     ;
 }
 .image_sub00
@@ -124,7 +124,7 @@ body
     linear-gradient(90deg,  var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
     linear-gradient(180deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
     linear-gradient(270deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
-    url("../images/ypodeigma50.png") -420px -124px no-repeat
+    url("/misthos/images/ypodeigma50.png") -420px -124px no-repeat
     ;
 }
 .image_sub01
@@ -134,7 +134,7 @@ body
     linear-gradient(90deg,  var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
     linear-gradient(180deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
     linear-gradient(270deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
-    url("../images/ypodeigma50.png") -540px -100px no-repeat
+    url("/misthos/images/ypodeigma50.png") -540px -100px no-repeat
     ;
 }
 .image_sub02
@@ -144,7 +144,7 @@ body
     linear-gradient(90deg,  var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
     linear-gradient(180deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
     linear-gradient(270deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
-    url("../images/ypodeigma50.png") -618px -180px no-repeat
+    url("/misthos/images/ypodeigma50.png") -618px -180px no-repeat
     ;
 }
 .image_sub03
@@ -154,7 +154,7 @@ body
     linear-gradient(90deg,  var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
     linear-gradient(180deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
     linear-gradient(270deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
-    url("../images/ypodeigma50.png") -618px -200px no-repeat
+    url("/misthos/images/ypodeigma50.png") -618px -200px no-repeat
     ;
 }
 .image_sub04
@@ -164,7 +164,7 @@ body
     linear-gradient(90deg,  var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
     linear-gradient(180deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
     linear-gradient(270deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
-    url("../images/ypodeigma50.png") -816px -20px no-repeat
+    url("/misthos/images/ypodeigma50.png") -816px -20px no-repeat
     ;
 }
 .image_sub_underfloor
@@ -174,7 +174,7 @@ body
     linear-gradient(90deg,  var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
     linear-gradient(180deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
     linear-gradient(270deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
-    url("../images/ypodeigma50.png") -1006px -20px no-repeat
+    url("/misthos/images/ypodeigma50.png") -1006px -20px no-repeat
     ;
 }
 .image_sub_wilo
@@ -184,7 +184,7 @@ body
     linear-gradient(90deg,  var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
     linear-gradient(180deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
     linear-gradient(270deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
-    url("../images/ypodeigma50.png") -876px -20px no-repeat
+    url("/misthos/images/ypodeigma50.png") -876px -20px no-repeat
     ;
 }
 .image_sub_dhw
@@ -194,7 +194,7 @@ body
     linear-gradient(90deg,  var(--gradientColor) 0px, rgba(0, 0, 0, 0) 10px),
     linear-gradient(180deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 10px),
     linear-gradient(270deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 10px),
-    url("../images/ypodeigma50.png") -936px -58px no-repeat
+    url("/misthos/images/ypodeigma50.png") -936px -58px no-repeat
     ;
 }
 .image_sub_energ
@@ -204,7 +204,7 @@ body
     linear-gradient(90deg,  var(--gradientColor) 0px, rgba(0, 0, 0, 0) 10px),
     linear-gradient(180deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 10px),
     linear-gradient(270deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 10px),
-    url("../images/ypodeigma50.png") -1100px -280px no-repeat
+    url("/misthos/images/ypodeigma50.png") -1100px -280px no-repeat
     ;
 }
 .image_sub_alert
@@ -214,7 +214,7 @@ body
     linear-gradient(90deg,  var(--gradientColor) 0px, rgba(0, 0, 0, 0) 10px),
     linear-gradient(180deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 10px),
     linear-gradient(270deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 10px),
-    url("../images/ypodeigma50.png") -930px -164px no-repeat
+    url("/misthos/images/ypodeigma50.png") -930px -164px no-repeat
     ;
 }
 .image_sub_valve
@@ -224,7 +224,7 @@ body
     linear-gradient(90deg,  var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
     linear-gradient(180deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
     linear-gradient(270deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
-    url("../images/ypodeigma50.png") -1230px -58px no-repeat
+    url("/misthos/images/ypodeigma50.png") -1230px -58px no-repeat
     ;
 }
 .vertical_two_container_text
