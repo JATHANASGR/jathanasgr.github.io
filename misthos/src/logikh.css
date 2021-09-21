@@ -1,0 +1,278 @@
+/* -------------------------------------------------- */
+/* GLOBAL */
+/* -------------------------------------------------- */
+:root
+{
+    --globalFontSize: 12px;
+    --globalIconSize: 16px;
+
+    --globalBorderColor: #d0d0d0;
+    --globalBoxColor: #f0f0f0;
+
+    --globalHoverColor: #e0e0e0;
+    --globalHoverTime: 0.5s;
+
+    --globalModuleHeight: 32px;
+
+    --globalTitleWidth: 60px;
+    --globalInputWidth: 60px;
+
+    --globalIndicatorColor: rgb(70, 160, 70);
+}
+
+/* -------------------------------------------------- */
+/* OTHER LIBRARIES */
+/* -------------------------------------------------- */
+.fas
+{
+    font-size: var(--globalIconSize);
+}
+
+/* -------------------------------------------------- */
+/* GENERIC */
+/* -------------------------------------------------- */
+html, body
+{
+    height: 100%;
+
+    margin: 0px;
+    padding: 0px;
+
+    box-sizing: border-box;
+}
+body
+{
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+/* -------------------------------------------------- */
+/* HEADER */
+/* -------------------------------------------------- */
+.header_container
+{
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    box-shadow: 0px 4px 10px lightgrey;
+}
+.header_button
+{
+    color: black;
+    text-decoration: none;
+
+    height: 100%;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background var(--globalHoverTime);
+}
+.header_button:hover
+{
+    cursor: pointer;
+    background: var(--globalHoverColor);
+}
+.header_text
+{
+    font-size: var(--globalFontSize);
+    font-family: "Segoe UI";
+}
+.header_gap
+{
+    width: 1px;
+    height: 60%;
+
+    margin-left: 6px;
+    margin-right: 6px;
+
+    background: var(--globalBorderColor);
+}
+
+/* -------------------------------------------------- */
+/* LOWER PART CONTAINS SPLIT */
+/* -------------------------------------------------- */
+.lower_screen
+{
+    padding: 10px;
+}
+.module_container
+{
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    height: 100%;
+    
+    padding: 10px;
+    
+    border: 1px solid var(--globalBorderColor);
+    box-sizing: border-box;
+}
+.graph_container
+{
+    height: 100%;
+
+    border: 1px solid var(--globalBorderColor);
+    box-sizing: border-box;
+
+    background: rgba(0, 0, 0, 0.02);
+}
+
+/* -------------------------------------------------- */
+/* MODULE */
+/* -------------------------------------------------- */
+.module_title
+{
+    user-select: none;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+
+    height: var(--globalModuleHeight);
+
+    padding-left: 6px;
+
+    border: 1px solid var(--globalBorderColor);
+    border-top: 0px;
+    box-sizing: border-box;
+    
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    
+    font-size: var(--globalFontSize);
+    font-family: "Segoe UI";
+
+    background: var(--globalBoxColor);
+    transition: background var(--globalHoverTime);
+}
+.module_title:hover
+{
+    background: var(--globalHoverColor);
+}
+.module_content
+{
+    overflow: hidden;
+    /* overflow: scroll; */
+    padding: 6px;
+    
+    border: 1px solid var(--globalBorderColor);
+    border-top: 0px;
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    align-items: center;
+    justify-items: start;
+}
+.module_disable
+{
+    display: none;
+}
+.first
+{
+    border: 1px solid var(--globalBorderColor);
+}
+
+/* -------------------------------------------------- */
+/* REGISTER */
+/* -------------------------------------------------- */
+.register_title
+{
+    user-select: none;
+    width: var(--globalTitleWidth);
+    
+    font-size: var(--globalFontSize);
+    font-family: "Segoe UI";
+    white-space: nowrap;
+}
+.register_input
+{
+    width: var(--globalInputWidth);
+    
+    border-radius: 0px;
+    border: 0px solid lightgrey;
+    outline: 1px solid lightgrey;
+
+    padding: 0px;
+    padding-left: 6px;
+    margin: 2px;
+
+    font-size: var(--globalFontSize);
+    font-family: "Segoe UI";
+}
+.register_input:focus
+{
+    outline: 1px solid rgb(70, 160, 70);
+}
+.register_description
+{
+    user-select: none;
+    padding-left: 6px;
+    
+    font-size: var(--globalFontSize);
+    font-family: "Segoe UI";
+    white-space: nowrap;
+}
+
+/* -------------------------------------------------- */
+/* CHANGE INDICATION */
+/* -------------------------------------------------- */
+.module_indicator
+{
+    user-select: none;
+    white-space: nowrap;
+    overflow: hidden;
+
+    height: 24px;
+
+    margin-bottom: 10px;
+    padding-left: 6px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    color: white;
+    font-size: var(--globalFontSize);
+    font-family: "Segoe UI";
+
+    background: var(--globalIndicatorColor);
+    transition: background var(--globalHoverTime);
+
+    animation-name: none;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes example
+{
+    0% {background-color: var(--globalIndicatorColor);}
+    50% {background-color: rgb(140, 200, 140);}
+    100% {background-color: var(--globalIndicatorColor);}
+}
+
+/* -------------------------------------------------- */
+/* CANVAS */
+/* -------------------------------------------------- */
+.canvas_class
+{
+    margin: 0px;
+    padding: 0px;
+
+    border: 0px solid black;
+
+    display:block;
+}
+*
+{
+    /* THIS IS NEEDED TO ALLOW SHRINKING OF CANVAS */
+    overflow: hidden;
+}

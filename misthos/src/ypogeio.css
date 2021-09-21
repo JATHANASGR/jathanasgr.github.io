@@ -1,0 +1,825 @@
+/* -------------------------------------------------- */
+/* GENERIC CSS (Checked) */
+/* -------------------------------------------------- */
+:root
+{
+    /* MINUS 20 (1420) */
+    --globalWidth: 1260px;
+    /* MINUS 120 (780) */
+    --globalHeight: 680px;
+
+    /* MAIN CONTAINERS */
+    --debugOutline: 0px;
+    
+    /* YPOGEIO STYLE */
+    --globalBackColor: rgb(243, 243, 243);
+    --globalDesignColor: #3760bd;
+    /* --globalOffColor: rgb(120, 120, 120); */
+    --globalOffColor: #3760bd;
+    --globalDarkColor: rgba(0, 0, 0, 0.8);
+    
+    --globalFontDarkColor: rgba(0, 0, 0, 0.8);
+}
+body
+{
+    margin: 0px;
+    padding: 0px;
+
+    background-color: rgb(243, 243, 243);
+}
+
+/* -------------------------------------------------- */
+/* MAIN CONTAINERS CSS (Checked) */
+/* -------------------------------------------------- */
+.border_container
+{
+    overflow: hidden;
+
+    width: var(--globalWidth);
+    height: var(--globalHeight);
+
+    margin: 0px;
+    padding: 0px;
+
+    /* background: rgba(255, 166, 0, 0.2); */
+    box-sizing: content-box;
+    
+    outline: var(--debugOutline) solid blue;
+}
+.tab_image
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+
+    width: var(--globalWidth);
+    height: 100px;
+
+    /* background: rgba(255, 68, 0, 0.2); */
+}
+.tab_image_left
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    
+}
+.tab_image_right
+{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.tab_image_middle
+{
+    position: absolute;
+    top: 0px;
+    left: 20px;
+
+    width: 90%;
+    height: 100px;
+}
+
+/* -------------------------------------------------- */
+/* MAIN CONTAINERS (Checked) */
+/* -------------------------------------------------- */
+.indicator_design_container
+{
+    position: absolute;
+    box-sizing: content-box;
+
+    left: 0px;
+    top: 0px;
+
+    margin: 0px;
+    padding: 0px;
+
+    pointer-events: none;
+}
+.indicator_text_container
+{
+    position: absolute;
+    box-sizing: content-box;
+
+    left: 0px;
+    top: 0px;
+    
+    margin: 0px;
+    padding: 0px;
+}
+
+/* -------------------------------------------------- */
+/* DESIGNS (Checked) */
+/* -------------------------------------------------- */
+.indicator_circle_light
+{
+    stroke: var(--globalDesignColor);
+    stroke-width: 2px;
+    fill: var(--globalBackColor);
+}
+.indicator_circle_light_off
+{
+    stroke: var(--globalOffColor);
+}
+.indicator_circle_colored
+{
+    fill: var(--globalDesignColor);
+}
+.indicator_circle_colored_off
+{
+    fill: var(--globalOffColor);
+}
+.indicator_line_dashed
+{
+    stroke: var(--globalDesignColor);
+    stroke-dasharray: 6px 3px;
+    stroke-width: 2px;
+}
+.indicator_line_dashed_off
+{
+    stroke: var(--globalOffColor);
+}
+.indicator_line_continuous
+{
+    stroke: var(--globalBackColor);
+    stroke-width: 1px;
+}
+.indicator_text_temp
+{
+    width: 44px;
+    height: 18px;
+    background: red;
+
+    position: absolute;
+
+    transform: translate(-50%, -50%) translate(0px, -14px);
+    
+}
+.indicator_text_humi
+{
+    width: 44px;
+    height: 18px;
+    background: red;
+
+    position: absolute;
+
+    transform: translate(-50%, -50%) translate(0px, 14px);
+}
+.indicator_text_numb
+{
+    user-select: none;
+
+    font-size: 12px;
+    font-family: "Segoe UI";
+    font-weight: bold;
+    color: var(--globalBackColor);
+
+    position: absolute;
+
+    transform: translate(-50%, -50%);
+}
+.small
+{
+    font-size: 12px;
+    font-family: "Segoe UI";
+    font-weight: 600;
+}
+
+/* -------------------------------------------------- */
+/* CAMERA (Checked) */
+/* -------------------------------------------------- */
+.indicator_camera_image_container
+{
+    overflow: hidden;
+
+    position: absolute;
+    width: 78px;
+    height: 78px;
+
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+
+    border: 1px solid var(--globalDesignColor);
+}
+.camera_small
+{
+    width: 100%;
+    height: 100%;
+}
+
+/* -------------------------------------------------- */
+/* FULL SCREEN CAMERA (Checked) */
+/* -------------------------------------------------- */
+.full_screen_container
+{
+    box-sizing: border-box;
+    position: fixed;
+
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--globalDarkColor);
+
+    opacity: 1.0;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+}
+.full_screen_white
+{
+    box-sizing: border-box;
+    
+    padding-top: 56.25%;
+    padding: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background: var(--globalBackColor);
+    border: 2px solid var(--globalDesignColor);
+}
+.camera_big
+{
+    box-sizing: border-box;
+
+    width: 100%;
+    height: 100%;
+
+    border: 1px solid var(--globalDesignColor);
+}
+.hidden
+{
+    pointer-events: none;
+    opacity: 0.0;
+}
+.overflow_body
+{
+    overflow: hidden;
+}
+
+/* -------------------------------------------------- */
+/* PINAKAS STYLE (Checked) */
+/* -------------------------------------------------- */
+:root
+{
+    /* JO */
+    /* JOJO */
+    --deosText: rgb(20, 20, 20);
+    --deosLine: rgb(120, 120, 120);
+    
+    
+    /* REAL BACK COLOR VALUE BELOW */
+    /* --deosBackValue: rgb(192, 192, 192); */
+    --deosBackValue: rgb(200, 200, 200);
+    /* --deosBackValue: rgb(240, 240, 240); */
+    /* --deosBackValue: rgb(230, 230, 230); */
+
+    --deosBackLight: rgb(230, 230, 230);
+    --deosShadowDark: rgb(64, 64, 64);
+    --deosShadowLigh: rgb(255, 255, 255);
+
+
+
+    /* /// */
+    --deosFontSize: 10px;
+    --deosButtonColor: #dfdfdf;
+    --deosButtonHoverColor: #cfcfcf;
+    --deosButtonClickColor: #bfbfbf;
+    --deosButtonBorderColor: #787878;
+
+    --deosButtonDark: #404040;
+    --deosButtonLight: #ffffff;
+    
+}
+.house_image
+{
+    position: relative;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.pinak_container_great
+{
+    position: absolute;
+
+    font-family: "Segoe UI";
+    color: var(--deosText);
+}
+.pinak_container_rows_two
+{
+    padding: 4px;
+
+    display: grid;
+    grid-template-columns: 24px 180px 1fr;
+    grid-gap: 1px;
+
+    outline: 1px dashed var(--deosLine);
+}
+.pinak_container_rows_three
+{
+    padding: 4px;
+
+    display: grid;
+    grid-template-columns: 24px 180px 1fr 1fr;
+    grid-gap: 1px;
+
+    outline: 1px dashed var(--deosLine);
+}
+.pinak_container_title
+{
+    padding: 2px;
+
+    display: grid;
+    grid-template-columns: 24px 180px;
+    grid-gap: 1px;
+}
+.pinak_title
+{
+    user-select: none;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pinak_text
+{
+    font-size: 10px;
+    font-weight: 700;
+
+    padding-left: 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    background: var(--deosBackLight);
+
+    outline: 1px solid var(--deosLine);
+}
+.center
+{
+    padding: 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pinak_novalue
+{
+    font-size: 11px;
+    font-weight: 600;
+
+    width: 44px;
+    height: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    box-shadow:
+    inset -1px -1px var(--deosShadowLigh),
+    inset 1px 1px var(--deosShadowDark);
+    
+    background: var(--deosBackValue);
+
+    outline: 1px solid var(--deosLine);
+}
+.custom_value_display
+{
+    user-select: none;
+
+    font-family: "Segoe UI";
+    color: var(--deosText);
+
+    font-size: 11px;
+    font-weight: 600;
+
+    width: 44px;
+    height: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    box-shadow:
+    inset -1px -1px var(--deosShadowLigh),
+    inset 1px 1px var(--deosShadowDark);
+    
+    background: var(--deosBackValue);
+
+    outline: 1px solid var(--deosLine);
+}
+.custom_value_display_neutral
+{
+    user-select: none;
+
+    font-family: "Segoe UI";
+    color: var(--deosText);
+
+    font-size: 11px;
+    font-weight: 600;
+
+    width: 44px;
+    height: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    box-shadow:
+    inset -1px -1px var(--deosShadowLigh),
+    inset 1px 1px var(--deosShadowDark);
+    
+    background: var(--deosBackValue);
+
+    outline: 1px solid var(--deosLine);
+}
+.special_value_01
+{
+    margin: 3px;
+    outline: none;
+    
+    background: white;
+    
+    box-shadow: none;
+    
+    border: 1px solid var(--deosButtonBorderColor);
+    box-sizing: border-box;
+}
+
+/* -------------------------------------------------- */
+/* ΤΑΒ (Checked) */
+/* -------------------------------------------------- */
+.tab_text_up
+{
+    user-select: none;
+    letter-spacing: 1px;
+
+    font-size: 18px;
+    font-family: "ARIAL";
+    font-weight: 600;
+    color: var(--deosText);
+
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) translateY(-14px);
+}
+.tab_text_down
+{
+    user-select: none;
+    letter-spacing: 1px;
+
+    font-size: 15px;
+    font-family: "ARIAL";
+    font-weight: 600;
+    color: var(--deosText);
+
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) translateY(14px);
+}
+
+/* -------------------------------------------------- */
+/* COOL HEAT (Checked) */
+/* -------------------------------------------------- */
+.coolheat_container
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1px;
+}
+.coolheat_container_title
+{
+    padding-top: 2px;
+
+    display: grid;
+    grid-template-columns: 39px auto;
+}
+.coolheat_icons
+{
+    grid-row: 1/3;
+
+    width: 40px;
+    height: 61px;
+    
+    /* background: green; */
+    outline: 1px dashed var(--deosLine);
+}
+.coolheat_buttons
+{
+    width: 86px;
+    height: 30px;
+    
+    /* background: yellow; */
+    outline: 1px dashed var(--deosLine);
+}
+.coolheat_image
+{
+    width: 34px;
+    height: 55px;
+
+    margin: 3px;
+
+    border: 1px solid var(--deosLine);
+
+    box-sizing: border-box;
+}
+/* CUSTOM BUTTON SIMPLE */
+.custom_btn_simple
+{
+    user-select: none;
+    font-size: var(--deosFontSize);
+    font-family: "Segoe UI";
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    padding: 0px;
+    margin: 0px;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 0px;
+    border: 1px solid var(--deosButtonBorderColor);
+    
+    box-sizing: border-box;
+    background: var(--deosButtonColor);
+
+    box-shadow:
+    inset -1px -1px var(--deosButtonDark),
+    inset 1px 1px var(--deosButtonLight);
+}
+.custom_btn_simple:hover
+{
+    background: var(--deosButtonHoverColor);
+}
+.custom_btn_simple:active
+{
+    /* background: var(--globalButtonClickColor); */
+    background: var(--deosButtonClickColor);
+
+    box-shadow:
+    inset 1px 1px var(--deosButtonDark),
+    inset -1px -1px var(--deosButtonLight);
+
+    padding-top: 1px;
+}
+/* -------------------------------------------------- */
+/* CUSTOM_IMAGE_ONOFF */
+/* -------------------------------------------------- */
+.custom_image_onoff
+{
+    position: absolute;
+}
+.custom_image
+{
+    position: absolute;
+}
+
+/* -------------------------------------------------- */
+/* CUSTOM PROP */
+/* -------------------------------------------------- */
+.custom_prop_container
+{
+    position: fixed;
+
+    right: 0px;
+    bottom: 0px;
+
+    margin: 10px;
+    padding: 10px;
+
+    border: 1px solid dimgrey;
+
+    background-color: rgb(243, 243, 243);
+}
+.custom_prop_incomming
+{
+    user-select: none;
+    font-size: 12px;
+    font-family: "Segoe UI";
+    
+    text-align: left;
+
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 10px;
+
+    max-height: 400px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.custom_btn_prop
+{
+    user-select: none;
+    font-size: var(--deosFontSize);
+    font-family: "Segoe UI";
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    width: 200px;
+    height: 22px;
+
+    padding: 0px;
+    margin: 0px;
+
+    padding-left: 8px;
+    padding-right: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 0px;
+    border: 1px solid var(--deosButtonBorderColor);
+    
+    box-sizing: border-box;
+    background: var(--deosButtonColor);
+
+    box-shadow:
+    inset -1px -1px var(--deosShadowDark),
+    inset 1px 1px var(--deosShadowLigh);
+}
+.custom_btn_prop:hover
+{
+    background: var(--deosButtonHoverColor);
+}
+.custom_btn_prop:active
+{
+    background: var(--deosButtonClickColor);
+
+    box-shadow:
+    inset 1px 1px var(--deosButtonDark),
+    inset -1px -1px var(--deosButtonLight);
+
+    padding-bottom: 1px;
+}
+
+/* -------------------------------------------------- */
+/* HIDE ELEMENTS */
+/* -------------------------------------------------- */
+.custom_hidden
+{
+    visibility: hidden;
+}
+.custom_disable
+{
+    display: none;
+}
+
+/* -------------------------------------------------- */
+/* HIDE ELEMENTS */
+/* -------------------------------------------------- */
+.klim_container_great
+{
+    position: absolute;
+
+    font-family: "Segoe UI";
+    font-weight: 700;
+    color: var(--deosText);
+}
+.klim_container
+{
+    /* position: absolute; */
+
+    /* font-size: 12px; */
+    font-family: "Segoe UI";
+    font-weight: 700;
+    color: var(--deosText);
+
+    padding: 3px;
+
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    align-items: center;
+    grid-gap: 4px;
+
+    outline: 1px dashed var(--deosLine);
+}
+.klim_container_title
+{
+    padding-top: 2px;
+    padding-left: 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.klim_image_icon
+{
+    user-select: none;
+
+    font-size: 18px;
+
+    width: 26px;
+    height: 26px;
+
+    box-sizing: border-box;
+    border: 1px solid var(--deosLine);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--deosButtonColor);
+}
+.klim_image_unit
+{
+    user-select: none;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    width: 26px;
+    height: 26px;
+
+    box-sizing: border-box;
+    border: 1px solid var(--deosLine);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--deosButtonColor);
+}
+.special_value_02
+{
+    /* font-size: 12px; */
+    /* font-weight: 500; */
+
+    outline: none;
+    
+    background: white;
+    
+    box-shadow: none;
+    
+    border: 1px solid var(--deosButtonBorderColor);
+    box-sizing: border-box;
+}
+.special_value_03
+{
+    outline: none;
+    
+    border: none;
+    box-sizing: border-box;
+}
+
+/* -------------------------------------------------- */
+/* fas NOT CLICKABLE BECAUSE BLOCKS BUTTON */
+/* -------------------------------------------------- */
+.fas
+{
+    pointer-events:none;
+}
+
+/* -------------------------------------------------- */
+/* OVAL NOT PROCEDURAL */
+/* -------------------------------------------------- */
+.oval_container
+{
+    position: absolute;
+
+    width: 26px;
+    height: 86px;
+    transform: translate(-50%, -50%);
+
+    border-radius: 20px;
+    /* outline: var(--globalDesignColor) 2px solid; OXI SYMBATO ME CHROME*/
+    border: 2px solid var(--globalDesignColor);
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.oval_icon
+{
+    color: var(--globalOffColor);
+    font-size: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.oval_icon_off
+{
+    color: lightgrey;
+}

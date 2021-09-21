@@ -1,0 +1,401 @@
+/* GENERIC CSS */
+:root
+{
+    --globalButtonColor: #dfdfdf;
+    --globalButtonHoverColor: #cfcfcf;
+    --globalButtonClickColor: #bfbfbf;
+    --globalButtonBorderColor: #787878;
+
+    --globalButtonWidth: 60px;
+    --globalButtonHeight: 18px;
+
+    --globalFontSize: 10px;
+    --globalFontSizeMid: 12px;
+
+    --globalButtonLight: #ffffff;
+    --globalButtonDark: #404040;
+}
+body
+{
+    background-color: rgb(243, 243, 243);
+}
+
+/* CUSTOM VALUE DISPLAY */
+.custom_value_display
+{
+    user-select: none;
+    font-size: var(--globalFontSizeMid);
+    font-family: "Segoe UI";
+
+    width: 45px;
+    height: 22px;
+    padding: 0px;
+    margin: 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+
+    border-radius: 0px;
+    border: 1px solid var(--globalButtonBorderColor);
+
+    background: white;
+
+    box-sizing: border-box;
+}
+.custom_value_display_nojs
+{
+    user-select: none;
+    font-size: var(--globalFontSizeMid);
+    font-family: "Segoe UI";
+
+    width: 45px;
+    height: 22px;
+    padding: 0px;
+    margin: 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+
+    border-radius: 0px;
+    border: 1px solid var(--globalButtonBorderColor);
+
+    background: white;
+
+    box-sizing: border-box;
+}
+
+/* CUSTOM_IMAGE_ONOFF */
+.custom_image_onoff
+{
+    position: absolute;
+}
+.custom_image_onoff_nojs
+{
+    position: absolute;
+}
+.custom_image
+{
+    position: absolute;
+    height: 15px;
+}
+
+/* CUSTOM SELECT HOA */
+.custom_select_hoa
+{
+    font-size: var(--globalFontSizeMid);
+    font-family: "Segoe UI";
+
+    width: var(--globalButtonWidth);
+    height: var(--globalButtonHeight);
+    padding: 0px;
+    margin: 0px;
+
+    /* width: 60px; */
+
+    position: absolute;
+
+    border-radius: 0px;
+    border: 1px solid var(--globalButtonBorderColor);
+
+    box-sizing: content-box;
+
+    /* background: rgba(250, 250, 230); */
+}
+
+/* CUSTOM BUTTON SIMPLE */
+.custom_btn_simple
+{
+    user-select: none;
+    font-size: var(--globalFontSize);
+    font-family: "Segoe UI";
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    width: var(--globalButtonWidth);
+    height: var(--globalButtonHeight);
+    padding: 0px;
+    margin: 0px;
+
+    overflow: hidden;
+
+    padding-bottom: 3px;
+
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 0px;
+    border: 1px solid var(--globalButtonBorderColor);
+    
+    box-sizing: border-box;
+    background: var(--globalButtonColor);
+
+    box-shadow:
+    inset -1px -1px var(--globalButtonDark),
+    inset 1px 1px var(--globalButtonLight);
+}
+.custom_btn_simple:hover
+{
+    background: var(--globalButtonHoverColor);
+}
+.custom_btn_simple:active
+{
+    background: var(--globalButtonClickColor);
+
+    box-shadow:
+    inset 1px 1px var(--globalButtonDark),
+    inset -1px -1px var(--globalButtonLight);
+
+    padding-bottom: 1px;
+}
+
+/* CUSTOM PROP */
+.custom_prop_container
+{
+    position: fixed;
+
+    right: 0px;
+    bottom: 0px;
+
+    margin: 10px;
+    padding: 10px;
+
+    border: 1px solid dimgrey;
+
+    background-color: rgb(243, 243, 243);
+}
+.custom_prop_incomming
+{
+    user-select: none;
+    font-size: 12px;
+    font-family: "Segoe UI";
+    
+    text-align: left;
+
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 10px;
+
+    max-height: 400px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.custom_btn_prop
+{
+    user-select: none;
+    font-size: var(--globalFontSize);
+    font-family: "Segoe UI";
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    width: 200px;
+    height: 22px;
+
+    padding: 0px;
+    margin: 0px;
+
+    padding-left: 8px;
+    padding-right: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 0px;
+    border: 1px solid var(--globalButtonBorderColor);
+    
+    box-sizing: border-box;
+    background: var(--globalButtonColor);
+
+    box-shadow:
+    inset -1px -1px var(--globalButtonDark),
+    inset 1px 1px var(--globalButtonLight);
+}
+.custom_btn_prop:hover
+{
+    background: var(--globalButtonHoverColor);
+}
+.custom_btn_prop:active
+{
+    background: var(--globalButtonClickColor);
+
+    box-shadow:
+    inset 1px 1px var(--globalButtonDark),
+    inset -1px -1px var(--globalButtonLight);
+
+    padding-bottom: 1px;
+}
+
+/* HIDE ELEMENTS */
+.custom_hidden
+{
+    visibility: hidden;
+}
+.custom_disable
+{
+    display: none;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* TAB ELEMENT (ADDED BEFORE FINISH) */
+/* ---------------------------------------------------------------------------------------------------- */
+.my_temp_tab
+{
+    overflow: hidden;
+    width: 332px;
+    height: 440px;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    position: absolute;
+
+    box-shadow: 0px 0px 10px #787878;
+}
+.tab_not_display
+{
+    display: none;
+}
+#mydivdrag
+{
+    user-select: none;
+    font-size: 12px;
+    font-family: "Segoe UI";
+    font-weight: normal;
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    padding-left: 12px;
+
+    position: absolute;
+
+    left: 0px;
+    top: 0px;
+
+    width: 300px;
+    height: 24px;
+
+    cursor: grab;
+}
+#mydivclose
+{
+    position: absolute;
+
+    right: 0px;
+    top: 0px;
+
+    width: 32px;
+    height: 24px;
+
+    cursor: pointer;
+}
+.tab_btn_container
+{
+    left: 256px;
+    top: 184px;
+
+    width: 20px;
+    height: 60px;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+
+    position: absolute;
+}
+.btn_hoa_container
+{
+    width: 20px;
+    height: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* CUSTOM TAB BUTTON SIMPLE (ADDED BEFORE FINISH) */
+/* ---------------------------------------------------------------------------------------------------- */
+.tab_btn_simple
+{
+    user-select: none;
+    font-size: var(--globalFontSize);
+    font-family: "Segoe UI";
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    width: var(--globalButtonWidth);
+    height: var(--globalButtonHeight);
+    padding: 0px;
+    margin: 0px;
+
+    overflow: hidden;
+
+    padding-bottom: 3px;
+
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 0px;
+    border: 1px solid var(--globalButtonBorderColor);
+    
+    box-sizing: border-box;
+    background: var(--globalButtonColor);
+
+    box-shadow:
+    inset -1px -1px var(--globalButtonDark),
+    inset 1px 1px var(--globalButtonLight);
+}
+.tab_btn_simple:hover
+{
+    background: var(--globalButtonHoverColor);
+}
+.tab_btn_simple:active
+{
+    background: var(--globalButtonClickColor);
+
+    box-shadow:
+    inset 1px 1px var(--globalButtonDark),
+    inset -1px -1px var(--globalButtonLight);
+
+    padding-bottom: 1px;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* HANDS (ADDED BEFORE FINISH) */
+/* ---------------------------------------------------------------------------------------------------- */
+.hand_pointer
+{
+    position: absolute;
+
+    color: rgb(230, 0, 0);
+
+    font-size: 18px;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.6);
+}
+.hand_pointer_select
+{
+    position: absolute;
+
+    color: rgb(230, 0, 0);
+
+    font-size: 18px;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.6);
+}

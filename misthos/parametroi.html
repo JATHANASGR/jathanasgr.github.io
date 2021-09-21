@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- LIBRARY GLOBAL -->
+    <script defer src="src/global.js"></script>
+
+    <!-- LIBRARY PARAMETROI -->
+    <link rel="stylesheet" href="src/parametroi.css">
+    <script defer src="src/parametroi.js"></script>
+
+    <!-- PAGE PARAMETERS -->
+    <title>ΠΑΡΑΜΕΤΡΟΙ</title>
+    <link rel="icon" type="image/png" href="images/favicon.png"/>
+</head>
+<body>
+    <div class="border_container">
+        <div class="tab_container"><img src="images/bar.png"></div>
+        <div class="content_container">
+
+            <!-- VERTICAL CONTAINER ONE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+            <div class="vertical_three_container">
+
+                <!-- Logic group ΑΝΤΙΡΡΟΗ -->
+                <div class="horizontal_twohalf_container">
+                    <div class="vertical_two_container_image_main image_sub_antir"></div>
+                    <div class="vertical_two_container_text">
+                        <p>ΑΝΤΙΡΡΟΗ</p>
+                        <p>Έλεγχος setpoint και διαφορικού αισθητηρίου (Θ2).</p>
+                        <input data-comname="p_antir_SP" class="custom_value_send" type="text" value="42"><label>oC, Setpoint (Θ2 >= SP) (Off)</label><br>
+                        <input data-comname="p_antir_DT"    class="custom_value_send" type="text" value="2"><label>oC, dT (Θ2 <= SP-dT) (On)</label><br>
+                    </div>
+                </div>
+                <img src="images/divider.png">
+
+                <!-- Logic group ΑΝΑΚΥΚΛΟΦΟΡΙΑ -->
+                <div class="horizontal_twohalf_container">
+                    <div class="vertical_two_container_image_main image_sub00"></div>
+                    <div class="vertical_two_container_text">
+                        <p>ΑΝΑΚΥΚΛΟΦΟΡΙΑ</p>
+                        <p>Έλεγχος setpoint και διαφορικού αισθητηρίου (Θ3).</p>
+                        <input data-comname="p_anak_SP" class="custom_value_send" type="text" value="38"><label>oC, Setpoint (Θ3 >= SP) (Off)</label><br>
+                        <input data-comname="p_anak_DT"    class="custom_value_send" type="text" value="2"><label>oC, dT (Θ3 <= SP-dT) (On)</label><br>
+                    </div>
+                </div>
+                <img src="images/divider.png">
+
+                <!-- Logic group ΑΝΤΙΣΤΑΣΗ -->
+                <div class="horizontal_twohalf_container">
+                    <div class="vertical_two_container_image_main image_sub_antis"></div>
+                    <div class="vertical_two_container_text">
+                        <p>ΑΝΤΙΣΤΑΣΗ</p>
+                        <p>Έλεγχος setpoint και διαφορικού αισθητηρίου (Θ1).</p>
+                        <input data-comname="p_antis_SP" class="custom_value_send" type="text" value="42"><label>oC, Setpoint (Θ1 >= SP) (Off)</label><br>
+                        <input data-comname="p_antis_DT"    class="custom_value_send" type="text" value="6"><label>oC, dT (Θ1 <= SP-dT) (On)</label><br>
+                    </div>
+                </div>
+                <img src="images/divider.png">
+
+                 <!-- Logic group ΗΛΙΑΚΟ ΣΥΣΤΗΜΑ -->
+                 <div class="horizontal_twohalf_container">
+                    <div class="vertical_two_container_image_main image_sub01"></div>
+                    <div class="vertical_two_container_text">
+                        <p>ΗΛΙΑΚΟ ΣΥΣΤΗΜΑ</p>
+                        <p>Διαφορικό εκκίνησης και διακοπής φόρτισης</p>
+                        <input data-comname="p_hliak_deltaON"       class="custom_value_send" type="text" value="6"><label>oC, dt On κυκλοφορητή (Θ5-Θ0 >= dT On) (On)</label><br>
+                        <input data-comname="p_hliak_deltaOFF"      class="custom_value_send" type="text" value="3"><label>oC, dt Off κυκλοφορητή (Θ5-Θ0 <= dT Off) (Off)</label><br>
+                        <p>Έλεγχος φόρτισης Xflow</p>
+                        <input data-comname="p_hliak_xflowSP"       class="custom_value_send" type="text" value="65"><label>oC, Setpoint Xflow (Θ0 >= SP) (Off)</label><br>
+                        <input data-comname="p_hliak_xflowDT"       class="custom_value_send" type="text" value="5"><label>oC, dT Xflow (Θ0 <= SP-dT) (On)</label><br>
+                        <p>Έλεγχος ψύξης ηλιακών</p>
+                        <input data-comname="p_hliak_coolSP"        class="custom_value_send" type="text" value="120"><label>oC, Setpoint ψύξης ηλιακών (Θ5 >= SP) (On)</label><br>
+                        <input data-comname="p_hliak_coolDT"        class="custom_value_send" type="text" value="20"><label>oC, dT ψύξης ηλιακών (Θ5 <= SP-dT) (Off)</label><br>
+                        <p>Έλεγχος ασφάλειας Xflow</p>
+                        <input data-comname="p_hliak_safeXflowSP"   class="custom_value_send" type="text" value="75"><label>oC, Setpoint ασφάλειας Xflow (Θ0 >= SP) (Off)</label><br>
+                        <input data-comname="p_hliak_safeXflowDT"   class="custom_value_send" type="text" value="10"><label>oC, dT ασφάλειας Xflow (Θ0 <= SP-dT) (On)</label><br>
+                        <p>Έλεγχος ασφάλειας δικτύου</p>
+                        <input data-comname="p_hliak_safePipeSP"    class="custom_value_send" type="text" value="135"><label>oC, Setpoint ασφάλειας δικτύου (Θ5 >= SP) (Off)</label><br>
+                        <input data-comname="p_hliak_safePipeDT"    class="custom_value_send" type="text" value="10"><label>oC, dt ασφάλειας δικτύου (Θ5 <= SP-dT) (On)</label><br>
+                    </div>
+                </div>
+                <img src="images/divider.png">
+
+                <!-- Logic group ΖΕΣΤΟ ΝΕΡΟ ΧΡΗΣΗΣ -->
+                <div class="horizontal_twohalf_container">
+                    <div class="vertical_two_container_image_main image_sub_dhw"></div>
+                    <div class="vertical_two_container_text">
+                        <p>ΖΕΣΤΟ ΝΕΡΟ ΧΡΗΣΗΣ (60/180 min εξυπηρέτηση/διακοπή)</p>
+                        <p>HYDRO - Έλεγχος setpoint αισθητηρίου (Μ0) Hydro στο XFLOW.</p>
+                        <input data-comname="p_dhw_hydro_SP" class="custom_value_send" type="text" value="40"><label>oC, (Όριο 30-50) SP αισθητ. Hydro στο XFLOW (Μ0 -2=On, +4=Off)</label><br>
+                    </div>
+                </div>
+                <img src="images/divider.png">
+
+                <!-- Logic group ΜΕΤΡΗΣΗ ΕΝΕΡΓΕΙΑΣ -->
+                <div class="horizontal_twohalf_container">
+                    <div class="vertical_two_container_image_main image_sub_energ"></div>
+                    <div class="vertical_two_container_text">
+                        <p>ΜΕΤΡΗΣΗ ΕΝΕΡΓΕΙΑΣ</p>
+                        <p>Ορισμός στοιχείων κατανάλωσης.</p>
+                        <input data-comname="p_energy_ekwh" class="custom_value_send" type="text" value="0.2"><label>€/kWh, (Όριο 0-10) Κόστος ενέργειας σε Ευρώ ανά κιλωβατόρα.</label><br>
+                        <input data-comname="p_energy_kgco2kwh" class="custom_value_send" type="text" value="0.6"><label>kgCO2/kWh, (Όριο 0-10) Εκπομπές CO2 ανά κιλωβατόρα.</label><br>
+                    </div>
+                </div>
+                <img src="images/divider.png">
+
+            </div>
+
+            <!-- VERTICAL CONTAINER 2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+            <div class="vertical_three_container">
+
+                <!-- Logic group ΕΝΔΟΔΑΠΕΔΙΑ ΘΕΡΜΑΝΣΗ -->
+                <div class="horizontal_twohalf_container">
+                    <div class="vertical_two_container_image_main image_sub_underfloor"></div>
+                    <div class="vertical_two_container_text">
+                        <p>ΕΝΔΟΔΑΠΕΔΙΑ ΘΕΡΜΑΝΣΗ</p>
+                        <p>HYDRO - Έλεγχος setpoint προσαγ. (Μ3) Hydro προς XFLOW για ενδοδ.</p>
+                        <input data-comname="p_endod_hydro_SP" class="custom_value_send" type="text" value="46"><label>oC, (Όριο 30-50) SP προσαγ. Hydro προς XFLOW (Μ3 -2=On, +2=Off)</label><br>
+                        <p>STRATOS MAXO - Όριο μέγιστης θερμοκρασίας προς ενδοδαπέδια</p>
+                        <input data-comname="p_endod_strat_SpSafe" class="custom_value_send" type="text" value="55"><label>oC, Μέγιστη επιτρεπόμενη θερμοκρασία προσαγ. ενδ. (Θ4 >= SP) (Off)</label><br>
+                        <input data-comname="p_endod_strat_dTSafe" class="custom_value_send" type="text" value="10"><label>oC, dT επιτρεπόμενης θερμοκρασίας προσαγ. ενδ. (Θ4 <= SP-dT) (On)</label><br>
+                        <p>STRATOS MAXO - Όρια παροχής προς ενδοδαπέδια</p>
+                        <input data-comname="p_endod_strat_Qmin" class="custom_value_send" type="text" value="1.2"><label>m3/h, (Όριο 0-10) Ελάχιστη επιτρεπόμενη παροχή λειτουργίας κυκλ.</label><br>
+                        <input data-comname="p_endod_strat_Qmax" class="custom_value_send" type="text" value="3.0"><label>m3/h, (Όριο 0-10) Μέγιστη επιτρεπόμενη παροχή λειτουργίας κυκλ.</label><br>
+                        <p>STRATOS MAXO - Έλεγχος μέγιστου μανομετρικού προς ενδοδαπέδια</p>
+                        <input data-comname="p_endod_strat_SpH" class="custom_value_send" type="text" value="7"><label>m, (Όριο 0-10) Επιθυμ. μέγιστο μανομετρικό κυκλ. (Τρέχον από Δp-v)</label><br>
+                    </div>
+                </div>
+                <img src="images/divider.png">
+
+                <!-- Logic group ΤΡΙΟΔΗ ΑΝΑΜΕΙΚΤΙΚΗ ΕΝΔΟΔΑΠΕΔΙΑΣ -->
+                <div class="horizontal_twohalf_container">
+                    <div class="vertical_two_container_image_main image_sub02"></div>
+                    <div class="vertical_two_container_text">
+                        <p>ΤΡΙΟΔΗ ΑΝΑΜΕΙΚΤΙΚΗ ΕΝΔΟΔΑΠΕΔΙΑΣ</p>
+                        <p>Έλεγχος αντιστάθμισης</p>
+                        <input data-comname="p_triod_neroMin"    class="custom_value_send" type="text" value="35"><label>oC, Setpoint Min νερού</label><br>
+                        <input data-comname="p_triod_neroMax"    class="custom_value_send" type="text" value="45"><label>oC, Setpoint Max νερού</label><br>
+                        <input data-comname="p_triod_periMin"    class="custom_value_send" type="text" value="5"><label>oC, Setpoint Min περιβάλλοντος</label><br>
+                        <input data-comname="p_triod_periMax"    class="custom_value_send" type="text" value="20"><label>oC, Setpoint Max περιβάλλοντος</label><br>
+                        <p>Έλεγχος PI</p>
+                        <input data-comname="p_triod_coefP"    class="custom_value_send" type="text" value="10"><label>Συντελεστής P (SP-Θ4 = 0 έως P, έλεγχος 0% έως 100%)</label><br>
+                        <input data-comname="p_triod_coefI"    class="custom_value_send" type="text" value="0.8"><label>Συντελεστής I (έλεγχος + ή - Ι)</label><br>
+                        <input data-comname="p_triod_coefIT"    class="custom_value_send" type="text" value="5"><label>Sec, Χρόνικό διάστημα άθροισης I</label><br>
+                        <p>Όρια λειτουργίας</p>
+                        <input data-comname="p_triod_ctrlMin"    class="custom_value_send" type="text" value="0"><label>min %, Ελάχιστο σήμα ελέγχου</label><br>
+                        <input data-comname="p_triod_ctrlMax"    class="custom_value_send" type="text" value="100"><label>max %, Μέγιστο σήμα ελέγχου</label><br>
+                    </div>
+                </div>
+                <img src="images/divider.png">
+
+                <!-- Logic group ΔΙΟΔΗ ΗΛΕΚΤΡΟΒΑΝΑ ΔΙΑΚΟΠΗΣ -->
+                <div class="horizontal_twohalf_container">
+                    <div class="vertical_two_container_image_main image_sub_valve"></div>
+                    <div class="vertical_two_container_text">
+                        <p>ΔΙΟΔΗ ΗΛΕΚΤΡΟΒΑΝΑ ΚΕΝΤΡΙΚΗΣ ΠΑΡΟΧΗΣ</p>
+                        <p>Έλεγχος setpoint πίεσης κλειστού κυκλ. για (Latching) διακοπή Η/Β.</p>
+                        <input data-comname="p_valve_SP" class="custom_value_send" type="text" value="1.0"><label>bar, Setpoint αισθητ. πίεσης. (Π0 <= SP Off)</label><br>
+                        <p>Έλεγχος ρυθμού μεταβολής πίεσης κλειστού κυκλ. για (Latching) διακοπή Η/Β.</p>
+                        <input data-comname="p_valve_dP" class="custom_value_send" type="text" value="0.5"><label>bar, Setpoint πτώσης πίεσης αισθητηρίου. (Π0 Παλια-Νέα >= SP) (Off)</label><br>
+                        <input data-comname="p_valve_dt" class="custom_value_send" type="text" value="10"><label>sec, Χρόνος δειγματοληψίας αισθητ. πίεσης.</label><br>
+                        <p>Έλεγχος αυτόματου κλεισίματος Η/Β.</p>
+                        <div class="container_btn_label">
+                            <div class="custom_btn_simple" data-comname="p_valve_btn_rst" style="letter-spacing: 0.3px; font-size: 9px; left: 871px; top: 368px; width: 60px; height: 20px;">RESET</div><label>Κουμπί απελευθέρωσης αυτόματου κλεισίματος Η/Β (Latch reset).</label><br>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/divider.png">
+
+                <!-- Logic group ΣΤΟΙΧΕΙΑ ΕΙΔΟΠΟΙΗΣΗΣ ΑΙΣΘΗΤΗΡΙΩΝ -->
+                <div class="horizontal_twohalf_container">
+                    <div class="vertical_two_container_image_main image_sub_alert"></div>
+                    <div class="vertical_two_container_text">
+                        <p>ΣΤΟΙΧΕΙΑ ΕΙΔΟΠΟΙΗΣΗΣ ΑΙΣΘΗΤΗΡΙΩΝ</p>
+                        <p>Όρια αισθητηρίων θερμοκρασίας (min, max)</p>
+                        <input data-comname="p_limit_T00_min" class="custom_value_send alert_class" type="text" value="20">
+                        <input data-comname="p_limit_T00_max" class="custom_value_send alert_class" type="text" value="70">
+                        <label>oC, (Θ0) Θερμ. XFLOW κάτω.</label><br>
+                        <input data-comname="p_limit_T01_min" class="custom_value_send alert_class" type="text" value="20">
+                        <input data-comname="p_limit_T01_max" class="custom_value_send alert_class" type="text" value="70">
+                        <label>oC, (Θ1) Θερμ. XFLOW πάνω.</label><br>
+                        <input data-comname="p_limit_T02_min" class="custom_value_send alert_class" type="text" value="30">
+                        <input data-comname="p_limit_T02_max" class="custom_value_send alert_class" type="text" value="60">
+                        <label>oC, (Θ2) Θερμ. αντιρροής.</label><br>
+                        <input data-comname="p_limit_T03_min" class="custom_value_send alert_class" type="text" value="30">
+                        <input data-comname="p_limit_T03_max" class="custom_value_send alert_class" type="text" value="50">
+                        <label>oC, (Θ3) Θερμ. ανακυκλοφορίας.</label><br>
+                        <input data-comname="p_limit_T04_min" class="custom_value_send alert_class" type="text" value="10">
+                        <input data-comname="p_limit_T04_max" class="custom_value_send alert_class" type="text" value="55">
+                        <label>oC, (Θ4) Θερμ. κλάδου προσαγωγής (μίξης) ενδοδαπέδιας.</label><br>
+                        <input data-comname="p_limit_T05_min" class="custom_value_send alert_class" type="text" value="10">
+                        <input data-comname="p_limit_T05_max" class="custom_value_send alert_class" type="text" value="135">
+                        <label>oC, (Θ5) Θερμ. ηλιακών συλλεκτών.</label><br>
+                        <input data-comname="p_limit_T06_min" class="custom_value_send alert_class" type="text" value="10">
+                        <input data-comname="p_limit_T06_max" class="custom_value_send alert_class" type="text" value="90">
+                        <label>oC, (Θ6) Θερμ. προσαγωγής προς ηλιακ. συλλέκτες (Κρύο).</label><br>
+                        <input data-comname="p_limit_T07_min" class="custom_value_send alert_class" type="text" value="10">
+                        <input data-comname="p_limit_T07_max" class="custom_value_send alert_class" type="text" value="90">
+                        <label>oC, (Θ7) Θερμ. επιστροφής από ηλιακ. συλλέκτες (Ζεστό).</label><br>
+                        <input data-comname="p_limit_T08_min" class="custom_value_send alert_class" type="text" value="10">
+                        <input data-comname="p_limit_T08_max" class="custom_value_send alert_class" type="text" value="45">
+                        <label>oC, (Θ8) Θερμ. συλλέκτη επιτροφών ενδοδ. υπογείου.</label><br>
+                        <input data-comname="p_limit_T09_min" class="custom_value_send alert_class" type="text" value="10">
+                        <input data-comname="p_limit_T09_max" class="custom_value_send alert_class" type="text" value="45">
+                        <label>oC, (Θ9) Θερμ. συλλέκτη επιτροφών ενδοδ. ισογείου.</label><br>
+                        <input data-comname="p_limit_T10_min" class="custom_value_send alert_class" type="text" value="10">
+                        <input data-comname="p_limit_T10_max" class="custom_value_send alert_class" type="text" value="45">
+                        <label>oC, (Θ10) Θερμ. συλλέκτη επιτροφών ενδοδ. ορόφου.</label><br>
+                        <input data-comname="p_limit_T11_min" class="custom_value_send alert_class" type="text" value="10">
+                        <input data-comname="p_limit_T11_max" class="custom_value_send alert_class" type="text" value="40">
+                        <label>oC, (Θ11) Θερμ. δοχείου αδράνειας νερού δικτύου.</label><br>
+                        <input data-comname="p_limit_T12_min" class="custom_value_send alert_class" type="text" value="0">
+                        <input data-comname="p_limit_T12_max" class="custom_value_send alert_class" type="text" value="50">
+                        <label>oC, (Θ12) Θερμ. περιβάλλοντος.</label><br>
+                        <input data-comname="p_limit_M00_min" class="custom_value_send alert_class" type="text" value="20">
+                        <input data-comname="p_limit_M00_max" class="custom_value_send alert_class" type="text" value="70">
+                        <label>oC, (M0) Θερμ. XFLOW μέση.</label><br>
+                        <input data-comname="p_limit_M01_min" class="custom_value_send alert_class" type="text" value="10">
+                        <input data-comname="p_limit_M01_max" class="custom_value_send alert_class" type="text" value="40">
+                        <label>oC, (M1) Θερμ. χώρου μηχανοστασίου.</label><br>
+                        <input data-comname="p_limit_M02_min" class="custom_value_send alert_class" type="text" value="20">
+                        <input data-comname="p_limit_M02_max" class="custom_value_send alert_class" type="text" value="70">
+                        <label>oC, (M2) Θερμ. επιστροφής HYDRO.</label><br>
+                        <input data-comname="p_limit_M03_min" class="custom_value_send alert_class" type="text" value="20">
+                        <input data-comname="p_limit_M03_max" class="custom_value_send alert_class" type="text" value="70">
+                        <label>oC, (M3) Θερμ. προσαγωγής HYDRO.</label><br>
+                        <input data-comname="p_limit_M04_min" class="custom_value_send alert_class" type="text" value="10">
+                        <input data-comname="p_limit_M04_max" class="custom_value_send alert_class" type="text" value="45">
+                        <label>oC, (M4) Θερμ. κλάδου επιστροφής ενδοδαπέδιας.</label><br>
+
+                        <p>Όρια αισθητηρίων πίεσης (min, max)</p>
+                        <input data-comname="p_limit_P00_min" class="custom_value_send alert_class" type="text" value="1.5">
+                        <input data-comname="p_limit_P00_max" class="custom_value_send alert_class" type="text" value="2.5">
+                        <label>bar, (Π0) Πίεση κλειστού κυκλώματος (Θέρμ. & Ηλιακά).</label><br>
+                        <input data-comname="p_limit_P01_min" class="custom_value_send alert_class" type="text" value="1.0">
+                        <input data-comname="p_limit_P01_max" class="custom_value_send alert_class" type="text" value="6.0">
+                        <label>bar, (Π1) Πίεση δικτύου ύδρευσης.</label><br>
+                    </div>
+                </div>
+                <img src="images/divider.png">
+
+            </div>
+            
+            <!-- VERTICAL CONTAINER 3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+            <div class="vertical_three_container">
+
+                <!-- Logic group ΕΣΩΤΕΡΙΚΕΣ ΜΟΝΑΔΕΣ ΚΛΙΜΑΤΙΣΜΟΥ -->
+                <div class="horizontal_twohalf_container">
+                    <div class="vertical_two_container_image_main image_sub04"></div>
+                    <div class="vertical_two_container_text">
+                        <p>ΕΣΩΤΕΡΙΚΕΣ ΜΟΝΑΔΕΣ ΚΛΙΜΑΤΙΣΜΟΥ</p>
+                        <p>Διαφορικό σημείου λειτουργίας θερμοστάτη και εσωτερικής μονάδας</p>
+                        <input data-comname="p_idu_dtH" class="custom_value_send" type="text" value="1"><label>oC, dT REGEL με IDU Θέρμανση (SP idu = SP regel + dt)</label><br>
+                        <input data-comname="p_idu_dtC" class="custom_value_send" type="text" value="2"><label>oC, dT REGEL με IDU Ψύξη (SP idu = SP regel - dt)</label><br>
+                        <p>Στοιχεία λειτουργίας εσωτερικής μονάδας 1</p>
+                        <input data-comname="p_idu1_room_temp" class="custom_value_display" type="text" disabled><label>oC, IDU 1 Αισθητήριο θερμοκρασίας χώρου</label><br>
+                        <input data-comname="p_idu1_refr_inlet" class="custom_value_display" type="text" disabled><label>oC, IDU 1 Είσοδος ψυκτικού</label><br>
+                        <input data-comname="p_idu1_refr_outlet" class="custom_value_display" type="text" disabled><label>oC, IDU 1 Εξοδος ψυκτικού</label><br>
+                        <p>Στοιχεία λειτουργίας εσωτερικής μονάδας 2</p>
+                        <input data-comname="p_idu2_room_temp" class="custom_value_display" type="text" disabled><label>oC, IDU 2 Αισθητήριο θερμοκρασίας χώρου</label><br>
+                        <input data-comname="p_idu2_refr_inlet" class="custom_value_display" type="text" disabled><label>oC, IDU 2 Είσοδος ψυκτικού</label><br>
+                        <input data-comname="p_idu2_refr_outlet" class="custom_value_display" type="text" disabled><label>oC, IDU 2 Εξοδος ψυκτικού</label><br>
+                        <p>Στοιχεία λειτουργίας εσωτερικής μονάδας 3</p>
+                        <input data-comname="p_idu3_room_temp" class="custom_value_display" type="text" disabled><label>oC, IDU 3 Αισθητήριο θερμοκρασίας χώρου</label><br>
+                        <input data-comname="p_idu3_refr_inlet" class="custom_value_display" type="text" disabled><label>oC, IDU 3 Είσοδος ψυκτικού</label><br>
+                        <input data-comname="p_idu3_refr_outlet" class="custom_value_display" type="text" disabled><label>oC, IDU 3 Εξοδος ψυκτικού</label><br>
+                        <p>Στοιχεία λειτουργίας εσωτερικής μονάδας 4</p>
+                        <input class="custom_value_display_neutral" type="text" value="--" disabled><label>oC, IDU 4 Αισθητήριο θερμοκρασίας χώρου</label><br>
+                        <input class="custom_value_display_neutral" type="text" value="--" disabled><label>oC, IDU 4 Είσοδος ψυκτικού</label><br>
+                        <input class="custom_value_display_neutral" type="text" value="--" disabled><label>oC, IDU 4 Εξοδος ψυκτικού</label><br>
+                        <p>Στοιχεία λειτουργίας εσωτερικής μονάδας 5</p>
+                        <input class="custom_value_display_neutral" type="text" value="--" disabled><label>oC, IDU 5 Αισθητήριο θερμοκρασίας χώρου</label><br>
+                        <input class="custom_value_display_neutral" type="text" value="--" disabled><label>oC, IDU 5 Είσοδος ψυκτικού</label><br>
+                        <input class="custom_value_display_neutral" type="text" value="--" disabled><label>oC, IDU 5 Εξοδος ψυκτικού</label><br>
+                        <p>Στοιχεία λειτουργίας εσωτερικής μονάδας 6</p>
+                        <input class="custom_value_display_neutral" type="text" value="--" disabled><label>oC, IDU 6 Αισθητήριο θερμοκρασίας χώρου</label><br>
+                        <input class="custom_value_display_neutral" type="text" value="--" disabled><label>oC, IDU 6 Είσοδος ψυκτικού</label><br>
+                        <input class="custom_value_display_neutral" type="text" value="--" disabled><label>oC, IDU 6 Εξοδος ψυκτικού</label><br>
+                        <p>Στοιχεία λειτουργίας εσωτερικής μονάδας 7</p>
+                        <input class="custom_value_display_neutral" type="text" value="--" disabled><label>oC, IDU 7 Αισθητήριο θερμοκρασίας χώρου</label><br>
+                        <input class="custom_value_display_neutral" type="text" value="--" disabled><label>oC, IDU 7 Είσοδος ψυκτικού</label><br>
+                        <input class="custom_value_display_neutral" type="text" value="--" disabled><label>oC, IDU 7 Εξοδος ψυκτικού</label><br>
+                        <p>Στοιχεία λειτουργίας εσωτερικής μονάδας 8</p>
+                        <input class="custom_value_display_neutral" type="text" value="--" disabled><label>oC, IDU 8 Αισθητήριο θερμοκρασίας χώρου</label><br>
+                        <input class="custom_value_display_neutral" type="text" value="--" disabled><label>oC, IDU 8 Είσοδος ψυκτικού</label><br>
+                        <input class="custom_value_display_neutral" type="text" value="--" disabled><label>oC, IDU 8 Εξοδος ψυκτικού</label><br>
+                    </div>
+                </div>
+                <img src="images/divider.png">
+
+                <!-- Logic group ΥΠΟΜΝΗΜΑ ΚΩΔΙΚΩΝ ΣΦΑΛΜΑΤΟΣ - STRATOS MAXO -->
+                <div class="horizontal_twohalf_container">
+                    <div class="vertical_two_container_image_main image_sub_wilo"></div>
+                    <div class="vertical_two_container_text">
+                        <p>ΥΠΟΜΝΗΜΑ ΚΩΔΙΚΩΝ ΣΦΑΛΜΑΤΟΣ - STRATOS MAXO</p>
+                        <p class="light_weight">0 - Status Undervoltage</p>
+                        <p class="light_weight">1 - Status Overvoltage</p>
+                        <p class="light_weight">2 - Status Phase fault</p>
+                        <p class="light_weight">3 - Status Idle running</p>
+                        <p class="light_weight">8 - Status Motor overheated</p>
+                        <p class="light_weight">9 - Status Motor error</p>
+                        <p class="light_weight">10 - Status Pump blocked</p>
+                        <p class="light_weight">11 - Status Module overheated</p>
+                        <p class="light_weight">12 - Status Module warning</p>
+                        <p class="light_weight">13 - Status Module error</p>
+                        <p class="light_weight">14 - Status sensor malfunction</p>
+                    </div>
+                </div>
+                <img src="images/divider.png">
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- PROP INCOMMING DISPLAY -->
+    <div class="custom_prop_container">
+        <div class="custom_prop_incomming custom_disable"></div>
+        <div id="btn_prop" class="custom_btn_prop">INCOMING PROPERTIES</div>
+    </div>
+</body>
+</html>

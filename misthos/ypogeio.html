@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- LIBRARY FONTAWESOME -->
+    <!-- <link href="fontawesome/css/all.css" rel="stylesheet"> -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+
+    <!-- GLOBAL LIBRARY -->
+    <script defer src="src/global.js"></script>
+
+    <!-- YPOGEIO LIBRARIES -->
+    <link rel="stylesheet" href="src/ypogeio.css">
+    <script defer src="src/ypogeio.js"></script>
+
+    <!-- YPOGEIO PAGE -->
+    <title>ΥΠΟΓΕΙΟ</title>
+    <link rel="icon" type="image/png" href="images/favicon.png"/>
+</head>
+<body>
+    
+    <!-- MAIN CONTAINER -->
+    <div class="border_container">
+        
+        <!-- ΚΑΤΟΨΗ -->
+        <img class="house_image" src="images/ypogeio.png" style="transform: translate(-50%, -50%) translate(-20px, 60px);">
+        
+        <!-- ΥΠΟΜΝΗΜΑ 1 -->
+        <div class="pinak_container_great" style="left: 20px; top: 110px;">
+            <div class="pinak_container_rows_two">
+                <div class="pinak_text center">Αρ.</div><div class="pinak_text">ΠΕΡΙΓΡΑΦΗ</div><div class="pinak_novalue" >oC</div>
+                <div class="pinak_text center">1</div><div class="pinak_text">Θερμ. Περιβάλλοντος</div><div class="custom_value_display" data-comname="y_outdoor_temp"></div>
+                <div class="pinak_text center">2</div><div class="pinak_text">Θερμ. Ζεστού νερού χρήσης</div><div class="custom_value_display" data-comname="y_antis_temp"></div>
+                <div class="pinak_text center">3</div><div class="pinak_text">Θερμ. Ηλιακών συλλεκτών</div><div class="custom_value_display" data-comname="y_hliak_solar_temp"></div>
+            </div>
+            <div class="pinak_container_title">
+                <div class="pinak_title"></div><div class="pinak_title">ΥΠΟΜΝΗΜΑ ΜΗΧΑΝΟΣΤΑΣΙΟΥ</div>
+            </div>
+        </div>
+        
+        <!-- ΥΠΟΜΝΗΜΑ 2 -->
+        <div class="pinak_container_great" style="left: 20px; top: 440px;">
+            <div class="pinak_container_rows_three">
+                <div class="pinak_text center">Αρ.</div><div class="pinak_text">ΠΕΡΙΓΡΑΦΗ</div><div class="pinak_novalue" >oC</div><div class="pinak_novalue">rH</div>
+                <div class="pinak_text center">1</div><div class="pinak_text">Υπ. Υπνοδωμάτιο</div><div class="custom_value_display" data-comname="y_ypn_room_temp"></div><div class="custom_value_display" data-comname="y_ypn_humid"></div>
+                <div class="pinak_text center">2</div><div class="pinak_text">Υπ. Γραφείο</div><div class="custom_value_display" data-comname="y_gra_room_temp"></div><div class="custom_value_display" data-comname="y_gra_humid"></div>
+                <div class="pinak_text center">3</div><div class="pinak_text">Υπ. Κουζίνα</div><div class="custom_value_display" data-comname="y_kou_room_temp"></div><div class="custom_value_display" data-comname="y_kou_humid"></div>
+                <div class="pinak_text center">4</div><div class="pinak_text">Υπ. Μηχανοστάσιο</div><div class="custom_value_display" data-comname="y_mhx_room_temp"></div><div class="custom_value_display_neutral">--</div>
+                <div class="pinak_text center">5</div><div class="pinak_text">Ισ. Δυτικό</div><div class="custom_value_display_neutral">--</div><div class="custom_value_display_neutral">--</div>
+                <div class="pinak_text center">6</div><div class="pinak_text">Ισ. Ανατολικό</div><div class="custom_value_display_neutral">--</div><div class="custom_value_display_neutral">--</div>
+                <div class="pinak_text center">7</div><div class="pinak_text">Όρ. Υπνοδωμάτιο ΒΔ</div><div class="custom_value_display_neutral">--</div><div class="custom_value_display_neutral">--</div>
+                <div class="pinak_text center">8</div><div class="pinak_text">Όρ. Υπνοδωμάτιο ΒΑ</div><div class="custom_value_display_neutral">--</div><div class="custom_value_display_neutral">--</div>
+                <div class="pinak_text center">9</div><div class="pinak_text">Όρ. Υπνοδωμάτιο ΝΑ</div><div class="custom_value_display_neutral">--</div><div class="custom_value_display_neutral">--</div>
+            </div>
+            <div class="pinak_container_title">
+                <div class="pinak_title"></div><div class="pinak_title">ΥΠΟΜ. ΘΕΡΜΟΚΡΑΣΙΩΝ ΧΩΡΩΝ</div>
+            </div>
+        </div>
+        
+        <!-- TITLE TAB -->
+        <div class="tab_image">
+            <img class="tab_image_middle" src="images/barMiddle.png">
+            <img class="tab_image_left" src="images/barLeft.png">
+            <img class="tab_image_right" src="images/barRight.png">
+            <div class="tab_text_up">Μίσθος Οικία</div>
+            <div class="tab_text_down">Κάτοψη Υπογείου</div>
+        </div>
+
+        <!-- SVG DESIGNS ALL -->
+        <svg class="indicator_design_container" viewbox="0 0 1260 680" width="1260" height="680"></svg>
+
+        <!-- TEMP AND HUMID TEXTS -->
+        <div class="indicator_text_container"></div>
+        
+        <!-- SMALL INNER CIRCLE CAMERA INDIVIDUAL -->
+        <div class="indicator_camera_container"></div>
+
+        <!-- COOL HEAT -->
+        <div class="pinak_container_great" style="left: 295px; top: 110px;">
+            <div class="coolheat_container">
+                <div class="coolheat_icons"><div class="coolheat_image"></div></div>
+                <div class="coolheat_buttons"><div class="custom_btn_simple" data-comname="y_klim_toggle" style="margin: 3px; width: 80px; height: 24px;">ΕΝΑΛΛΑΓΗ</div></div>
+                <div class="coolheat_buttons"><div class="custom_value_display special_value_01" data-comname="y_regelch_remain" style="width: 80px; height: 24px;"></div></div>
+            </div>
+            <div class="coolheat_container_title">
+                <div class="pinak_title test">MODE</div><div class="pinak_title"></div>
+            </div>
+        </div>
+
+        <!-- IMAGES ON OFF -->
+        <div class="custom_image_onoff" data-comname="y_isCool_bool" style="left: 300px; top: 118px;">
+            <img class="custom_image" src="images/heat.png">
+            <img class="custom_image" src="images/cool.png">
+        </div>
+
+        <!-- VALUES DISPLAY LG -->
+        <div class="custom_value_display special_value_03" data-comname="y_ypn_room_temp" style="position: absolute; left: 298px; top: 299px;"></div>
+        <div class="custom_value_display special_value_03" data-comname="y_ypn_humid" style="position: absolute; left: 298px; top: 327px;"></div>
+        <div class="custom_value_display special_value_03" data-comname="y_gra_room_temp" style="position: absolute; left: 527px; top: 183px;"></div>
+        <div class="custom_value_display special_value_03" data-comname="y_gra_humid" style="position: absolute; left: 527px; top: 211px;"></div>
+        <div class="custom_value_display special_value_03" data-comname="y_kou_room_temp" style="position: absolute; left: 878px; top: 321px;"></div>
+        <div class="custom_value_display special_value_03" data-comname="y_kou_humid" style="position: absolute; left: 878px; top: 349px;"></div>
+        <div class="custom_value_display special_value_03" data-comname="y_mhx_room_temp" style="position: absolute; left: 878px; top: 448px;"></div>
+        <div class="custom_value_display_neutral special_value_03" style="position: absolute; left: 878px; top: 476px;">--</div>
+
+    </div>
+    
+    <!-- KLIMATISMOS MENU -->
+    <div class="klim_container_great" style="left: 1010px; top: 110px;">
+        <div class="klim_container">
+            <div class="custom_btn_simple" data-comname="y_ypn_btn_temp_minus" style="width: 48px; height: 26px;"><i class="fas fa-minus"></i></div>
+            <div class="klim_image_icon"><i class="fas fa-thermometer-quarter"></i></div>
+            <div class="custom_value_display special_value_02" data-comname="y_ypn_temp_display" style="width: 60px; height: 26px;"></div>
+            <div class="klim_image_unit">oC</div>
+            <div class="custom_btn_simple" data-comname="y_ypn_btn_temp_plus" style="width: 48px; height: 26px;"><i class="fas fa-plus"></i></div>
+
+            <div class="custom_btn_simple" data-comname="y_ypn_btn_fan_minus" style="width: 48px; height: 26px;"><i class="fas fa-minus"></i></div>
+            <div class="klim_image_icon"><i class="fas fa-fan"></i></div>
+            <div class="custom_value_display special_value_02" data-comname="y_ypn_fan_display" style="width: 60px; height: 26px;"></div>
+            <div class="klim_image_unit">0-3</div>
+            <div class="custom_btn_simple" data-comname="y_ypn_btn_fan_plus" style="width: 48px; height: 26px;"><i class="fas fa-plus"></i></div>
+
+            <div class="custom_btn_simple" data-comname="y_ypn_btn_end_minus" style="width: 48px; height: 26px;"><i class="fas fa-minus"></i></div>
+            <div class="klim_image_icon"><i class="fab fa-squarespace"></i></div>
+            <div class="custom_value_display special_value_02" data-comname="y_ypn_end_display" style="width: 60px; height: 26px;"></div>
+            <div class="klim_image_unit">0-1</div>
+            <div class="custom_btn_simple" data-comname="y_ypn_btn_end_plus" style="width: 48px; height: 26px;"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="klim_container_title">
+            <div class="pinak_title test">ΥΠΝΟΔΩΜΑΤΙΟ (1)</div>
+        </div>
+    </div>
+
+    <div class="klim_container_great" style="left: 1010px; top: 240px;">
+        <div class="klim_container">
+            <div class="custom_btn_simple" data-comname="y_gra_btn_temp_minus" style="width: 48px; height: 26px;"><i class="fas fa-minus"></i></div>
+            <div class="klim_image_icon"><i class="fas fa-thermometer-quarter"></i></div>
+            <div class="custom_value_display special_value_02" data-comname="y_gra_temp_display" style="width: 60px; height: 26px;"></div>
+            <div class="klim_image_unit">oC</div>
+            <div class="custom_btn_simple" data-comname="y_gra_btn_temp_plus" style="width: 48px; height: 26px;"><i class="fas fa-plus"></i></div>
+
+            <div class="custom_btn_simple" data-comname="y_gra_btn_fan_minus" style="width: 48px; height: 26px;"><i class="fas fa-minus"></i></div>
+            <div class="klim_image_icon"><i class="fas fa-fan"></i></div>
+            <div class="custom_value_display special_value_02" data-comname="y_gra_fan_display" style="width: 60px; height: 26px;"></div>
+            <div class="klim_image_unit">0-3</div>
+            <div class="custom_btn_simple" data-comname="y_gra_btn_fan_plus" style="width: 48px; height: 26px;"><i class="fas fa-plus"></i></div>
+
+            <div class="custom_btn_simple" data-comname="y_gra_btn_end_minus" style="width: 48px; height: 26px;"><i class="fas fa-minus"></i></div>
+            <div class="klim_image_icon"><i class="fab fa-squarespace"></i></div>
+            <div class="custom_value_display special_value_02" data-comname="y_gra_end_display" style="width: 60px; height: 26px;"></div>
+            <div class="klim_image_unit">0-1</div>
+            <div class="custom_btn_simple" data-comname="y_gra_btn_end_plus" style="width: 48px; height: 26px;"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="klim_container_title">
+            <div class="pinak_title test">ΓΡΑΦΕΙΟ (2)</div>
+        </div>
+    </div>
+
+    <div class="klim_container_great" style="left: 1010px; top: 370px;">
+        <div class="klim_container">
+            <div class="custom_btn_simple" data-comname="y_kou_btn_temp_minus" style="width: 48px; height: 26px;"><i class="fas fa-minus"></i></div>
+            <div class="klim_image_icon"><i class="fas fa-thermometer-quarter"></i></div>
+            <div class="custom_value_display special_value_02" data-comname="y_kou_temp_display" style="width: 60px; height: 26px;"></div>
+            <div class="klim_image_unit">oC</div>
+            <div class="custom_btn_simple" data-comname="y_kou_btn_temp_plus" style="width: 48px; height: 26px;"><i class="fas fa-plus"></i></div>
+
+            <div class="custom_btn_simple" data-comname="y_kou_btn_fan_minus" style="width: 48px; height: 26px;"><i class="fas fa-minus"></i></div>
+            <div class="klim_image_icon"><i class="fas fa-fan"></i></div>
+            <div class="custom_value_display special_value_02" data-comname="y_kou_fan_display" style="width: 60px; height: 26px;"></div>
+            <div class="klim_image_unit">0-3</div>
+            <div class="custom_btn_simple" data-comname="y_kou_btn_fan_plus" style="width: 48px; height: 26px;"><i class="fas fa-plus"></i></div>
+
+            <div class="custom_btn_simple" data-comname="y_kou_btn_end_minus" style="width: 48px; height: 26px;"><i class="fas fa-minus"></i></div>
+            <div class="klim_image_icon"><i class="fab fa-squarespace"></i></div>
+            <div class="custom_value_display special_value_02" data-comname="y_kou_end_display" style="width: 60px; height: 26px;"></div>
+            <div class="klim_image_unit">0-1</div>
+            <div class="custom_btn_simple" data-comname="y_kou_btn_end_plus" style="width: 48px; height: 26px;"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="klim_container_title">
+            <div class="pinak_title">KOYZINA / ΣΑΛΟΝΙ (3)</div>
+        </div>
+    </div>
+    
+    <div id="icons_ypn" class="oval_container" style="left: 254px; top: 322px;">
+        <div class="oval_icon oval_icon_off" data-comname="y_ypn_isWorking"><i class="far fa-clock"></i></div>
+        <div class="oval_icon oval_icon_off" data-comname="y_ypn_isFanOn"><i class="fas fa-fan"></i></div>
+        <div class="oval_icon oval_icon_off" data-comname="y_ypn_isEndodOn"><i class="fab fa-squarespace"></i></div>
+    </div>
+    <div id="icons_gra" class="oval_container" style="left: 615px; top: 206px;">
+        <div class="oval_icon oval_icon_off" data-comname="y_gra_isWorking"><i class="far fa-clock"></i></div>
+        <div class="oval_icon oval_icon_off" data-comname="y_gra_isFanOn"><i class="fas fa-fan"></i></div>
+        <div class="oval_icon oval_icon_off" data-comname="y_gra_isEndodOn"><i class="fab fa-squarespace"></i></div>
+    </div>
+    <div id="icons_kou" class="oval_container" style="left: 966px; top: 344px;">
+        <div class="oval_icon oval_icon_off" data-comname="y_kou_isWorking"><i class="far fa-clock"></i></div>
+        <div class="oval_icon oval_icon_off" data-comname="y_kou_isFanOn"><i class="fas fa-fan"></i></div>
+        <div class="oval_icon oval_icon_off" data-comname="y_kou_isEndodOn"><i class="fab fa-squarespace"></i></div>
+    </div>
+    <!-- <div class="oval_container" style="left: 966px; top: 471px;">
+        <div class="oval_icon oval_icon_off"><i class="fas fa-thermometer-quarter"></i></div>
+        <div class="oval_icon oval_icon_off"><i class="fas fa-fan"></i></div>
+        <div class="oval_icon oval_icon_off"><i class="fab fa-squarespace"></i></div>
+    </div> -->
+
+    <!-- FRONT CAMERA -->
+    <div class="full_screen_container hidden"><div class="full_screen_white"><img class="camera_big" src=""></div></div>
+
+    <!-- PROP INCOMMING DISPLAY (SHOULD BE LAST!!!!!!!!!!!!!!!) -->
+    <div class="custom_prop_container">
+        <div class="custom_prop_incomming custom_disable"></div>
+        <div id="btn_prop" class="custom_btn_prop">INCOMING PROPERTIES</div>
+    </div>
+
+</body>
+</html>

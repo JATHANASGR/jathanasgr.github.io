@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- LIBRARY FONTAWESOME -->
+    <!-- <link href="fontawesome/css/all.css" rel="stylesheet"> -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+
+    <!-- LIBRARY GLOBAL -->
+    <script defer src="src/global.js"></script>
+
+    <!-- LIBRARY SPLIT -->
+    <link rel="stylesheet" type="text/css" href="src/split.css">
+    <script defer src="src/split.js"></script>
+    
+    <!-- LIBRARY ACCORDION -->
+    <script defer src="src/accordion.js"></script>
+
+    <!-- LITEGRAPH -->
+    <link rel="stylesheet" type="text/css" href="src/litegraph.css">
+    <script src="src/litegraph.js"></script> <!-- NO DEFER -->
+    <script src="src/litegraph_custom_nodes.js"></script> <!-- NO DEFER -->
+
+    <!-- LIBRARY LOGIKH -->
+    <link rel="stylesheet" type="text/css" href="src/logikh.css">
+    <script defer src="src/logikh.js"></script>
+    
+    <!-- PAGE PARAMETERS -->
+    <title>ΛΟΓΙΚΗ</title>
+    <link rel="icon" type="image/png" href="images/favicon.png"/>
+</head>
+<body>
+    <div class="header_container">
+        <a href="index.html" class="header_button"><div class="fas fa-tools"></div><div class="header_text">&nbsp;&nbsp;ΛΟΓΙΚΗ</div></a>
+        <div class="header_gap"></div>
+        <a href="thermostats.html" class="header_button"><div class="fas fa-tablet-alt"></div><div class="header_text">&nbsp;&nbsp;ΘΕΡΜΟΣΤΑΤΕΣ</div></a>
+        <div class="header_gap"></div>
+        <a href="ypogeio.html" class="header_button"><div class="fas fa-home"></div><div class="header_text">&nbsp;&nbsp;ΥΠΟΓΕΙΟ</div></a>
+        <div class="header_gap"></div>
+        <a href="khpos.html" class="header_button"><div class="fas fa-leaf"></div><div class="header_text">&nbsp;&nbsp;ΚΗΠΟΣ</div></a>
+        <div class="header_gap"></div>
+        <a href="mhxanostasio.html" class="header_button"><div class="fas fa-tint"></div><div class="header_text">&nbsp;&nbsp;ΜΗΧΑΝΟΣΤΑΣΙΟ</div></a>
+        <div class="header_gap"></div>
+        <a href="parametroi.html" class="header_button"><div class="fas fa-exclamation-circle"></div><div class="header_text">&nbsp;&nbsp;ΠΑΡΑΜΕΤΡΟΙ</div></a>
+    </div>
+
+    <div class="lower_screen">
+        <div class="split_container">
+            <div class="split_left">
+                <div id="id_module_container" class="module_container">
+                    <div class="module_indicator">CHANGED</div>
+                </div>
+            </div>
+            <div class="split_middle"></div>
+            <div class="split_right">
+                <div class="graph_container">
+                    <canvas class="canvas_class"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

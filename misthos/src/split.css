@@ -1,0 +1,28 @@
+.split_container
+{
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+}
+
+.split_left
+{
+    /* background: lightgreen; */
+}
+
+.split_middle
+{
+    background-image: url("/images/grab.png");
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.split_middle:hover
+{
+    cursor: e-resize;
+}
+
+.split_right
+{
+    /* background: lightsalmon; */
+}

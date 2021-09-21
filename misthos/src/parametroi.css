@@ -1,0 +1,514 @@
+/* -------------------------------------------------- */
+/* GENERIC CSS */
+/* -------------------------------------------------- */
+:root
+{
+    /* Width : 1660 */
+    /* Height : 930 */
+    --globalWidth: 1660px;
+    --globalHeight: 1430px;
+    --globalBorderLeft: 20px;
+
+    --debugBorder: 0px;
+    --gradientColor: rgb(243, 243, 243);
+
+    --globalHeightGap: 8px;
+}
+body
+{
+    font-size: 11px;
+    font-family: "Segoe UI";
+
+    margin: 0px;
+    padding: 0px;
+
+    background-color: rgb(243, 243, 243);
+}
+/* -------------------------------------------------- */
+/* CONTAINERS CSS */
+/* -------------------------------------------------- */
+.border_container
+{
+    overflow: hidden;
+
+    width: var(--globalWidth);
+    height: var(--globalHeight);
+
+    margin: 0px;
+    padding: 0px;
+
+    /* background: orange; */
+    box-sizing: content-box;
+    
+    border: var(--debugBorder) solid blue;
+}
+.tab_container
+{
+    height: 100px;
+    width: 100%;
+
+    margin: 0px;
+    padding: 0px;
+
+    /* background: red; */
+    box-sizing: content-box;
+}
+.content_container
+{
+    height: 600px;
+    width: 100%;
+
+    margin: 0px;
+    padding: 0px;
+
+    /* background: green; */
+    box-sizing: content-box;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.vertical_three_container
+{
+    margin: 0px;
+    padding: 0px;
+    
+    box-sizing: content-box;
+    border: var(--debugBorder) solid lime;
+}
+.horizontal_twohalf_container
+{
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 8px;
+    margin-left: var(--globalBorderLeft);
+    
+    display: grid;
+    grid-template-columns: 80px 1fr;
+
+    box-sizing: content-box;
+    border: var(--debugBorder) solid red;
+}
+.vertical_two_container_image_main
+{
+    margin: 0px;
+    padding: 0px;
+
+    overflow: hidden;
+    
+    border: var(--debugBorder) solid blue;
+}
+.image_sub_antis
+{
+    background:
+    linear-gradient(0deg,   var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
+    linear-gradient(90deg,  var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
+    linear-gradient(180deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
+    linear-gradient(270deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
+    url("/images/ypodeigma50.png") -470px -330px no-repeat
+    ;
+}
+.image_sub_antir
+{
+    background:
+    linear-gradient(0deg,   var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
+    linear-gradient(90deg,  var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
+    linear-gradient(180deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
+    linear-gradient(270deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
+    url("/images/ypodeigma50.png") -460px -200px no-repeat
+    ;
+}
+.image_sub00
+{
+    background:
+    linear-gradient(0deg,   var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
+    linear-gradient(90deg,  var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
+    linear-gradient(180deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
+    linear-gradient(270deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
+    url("/images/ypodeigma50.png") -420px -124px no-repeat
+    ;
+}
+.image_sub01
+{
+    background:
+    linear-gradient(0deg,   var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
+    linear-gradient(90deg,  var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
+    linear-gradient(180deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
+    linear-gradient(270deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
+    url("/images/ypodeigma50.png") -540px -100px no-repeat
+    ;
+}
+.image_sub02
+{
+    background:
+    linear-gradient(0deg,   var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
+    linear-gradient(90deg,  var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
+    linear-gradient(180deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
+    linear-gradient(270deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
+    url("/images/ypodeigma50.png") -618px -180px no-repeat
+    ;
+}
+.image_sub03
+{
+    background:
+    linear-gradient(0deg,   var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
+    linear-gradient(90deg,  var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
+    linear-gradient(180deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
+    linear-gradient(270deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
+    url("/images/ypodeigma50.png") -618px -200px no-repeat
+    ;
+}
+.image_sub04
+{
+    background:
+    linear-gradient(0deg,   var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
+    linear-gradient(90deg,  var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
+    linear-gradient(180deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
+    linear-gradient(270deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
+    url("/images/ypodeigma50.png") -816px -20px no-repeat
+    ;
+}
+.image_sub_underfloor
+{
+    background:
+    linear-gradient(0deg,   var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
+    linear-gradient(90deg,  var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
+    linear-gradient(180deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
+    linear-gradient(270deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
+    url("/images/ypodeigma50.png") -1006px -20px no-repeat
+    ;
+}
+.image_sub_wilo
+{
+    background:
+    linear-gradient(0deg,   var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
+    linear-gradient(90deg,  var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
+    linear-gradient(180deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
+    linear-gradient(270deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
+    url("/images/ypodeigma50.png") -876px -20px no-repeat
+    ;
+}
+.image_sub_dhw
+{
+    background:
+    linear-gradient(0deg,   var(--gradientColor) 0px, rgba(0, 0, 0, 0) 10px),
+    linear-gradient(90deg,  var(--gradientColor) 0px, rgba(0, 0, 0, 0) 10px),
+    linear-gradient(180deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 10px),
+    linear-gradient(270deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 10px),
+    url("/images/ypodeigma50.png") -936px -58px no-repeat
+    ;
+}
+.image_sub_energ
+{
+    background:
+    linear-gradient(0deg,   var(--gradientColor) 0px, rgba(0, 0, 0, 0) 10px),
+    linear-gradient(90deg,  var(--gradientColor) 0px, rgba(0, 0, 0, 0) 10px),
+    linear-gradient(180deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 10px),
+    linear-gradient(270deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 10px),
+    url("/images/ypodeigma50.png") -1100px -280px no-repeat
+    ;
+}
+.image_sub_alert
+{
+    background:
+    linear-gradient(0deg,   var(--gradientColor) 0px, rgba(0, 0, 0, 0) 10px),
+    linear-gradient(90deg,  var(--gradientColor) 0px, rgba(0, 0, 0, 0) 10px),
+    linear-gradient(180deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 10px),
+    linear-gradient(270deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 10px),
+    url("/images/ypodeigma50.png") -930px -164px no-repeat
+    ;
+}
+.image_sub_valve
+{
+    background:
+    linear-gradient(0deg,   var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
+    linear-gradient(90deg,  var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
+    linear-gradient(180deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
+    linear-gradient(270deg, var(--gradientColor) 0px, rgba(0, 0, 0, 0) 20px),
+    url("/images/ypodeigma50.png") -1230px -58px no-repeat
+    ;
+}
+.vertical_two_container_text
+{
+    margin: 0px;
+    padding: 0px;
+    padding-left: var(--globalBorderLeft);
+
+    border: var(--debugBorder) solid blue;
+}
+
+/* -------------------------------------------------- */
+/* OTHER CSS */
+/* -------------------------------------------------- */
+p
+{
+    font-weight: bold;
+
+    margin: 0px;
+    padding: 0px;
+
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.custom_value_send
+{
+    background: white;
+    border: 1px solid #8a8a8a;
+    border-radius: 2px;
+
+    font-size: 11px;
+
+    height: 18px;
+    width: 60px;
+
+    margin: 0px;
+    padding: 0px;
+
+    margin-top: 1px;
+    margin-bottom: 1px;
+
+    padding-right: 2px;
+    text-align: right;
+
+    box-sizing: border-box;
+}
+.custom_value_display
+{
+    user-select: none;
+
+    font-size: 11px;
+
+    height: 18px;
+    width: 60px;
+
+    margin: 0px;
+    padding: 0px;
+
+    margin-top: 1px;
+    margin-bottom: 1px;
+
+    padding-right: 2px;
+    text-align: right;
+
+    box-sizing: border-box;
+
+    /* color: darkred; */
+}
+.custom_value_display_neutral
+{
+    user-select: none;
+
+    font-size: 11px;
+
+    height: 18px;
+    width: 60px;
+
+    margin: 0px;
+    padding: 0px;
+
+    margin-top: 1px;
+    margin-bottom: 1px;
+
+    padding-right: 2px;
+    text-align: right;
+
+    box-sizing: border-box;
+
+    /* color: darkred; */
+}
+label
+{
+    padding-left: 6px;
+}
+.gap
+{
+    height: var(--globalHeightGap);
+}
+p
+{
+    user-select: none;
+}
+label
+{
+    user-select: none;
+}
+.light_weight
+{
+    font-weight: 500;
+}
+
+/* -------------------------------------------------- */
+/* CUSTOM PROP */
+/* -------------------------------------------------- */
+:root
+{
+    --globalButtonColor: #dfdfdf;
+    --globalButtonHoverColor: #cfcfcf;
+    --globalButtonClickColor: #bfbfbf;
+    --globalButtonBorderColor: #787878;
+
+    --globalFontSize: 10px;
+    --globalFontSizeMid: 12px;
+
+    --globalButtonLight: #ffffff;
+    --globalButtonDark: #404040;
+}
+.custom_prop_container
+{
+    position: fixed;
+
+    right: 0px;
+    bottom: 0px;
+
+    margin: 10px;
+    padding: 10px;
+
+    border: 1px solid dimgrey;
+
+    background-color: rgb(243, 243, 243);
+}
+.custom_prop_incomming
+{
+    user-select: none;
+    font-size: 12px;
+    font-family: "Segoe UI";
+    
+    text-align: left;
+
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 10px;
+    
+    max-height: 400px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.custom_btn_prop
+{
+    user-select: none;
+    font-size: var(--globalFontSize);
+    font-family: "Segoe UI";
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    width: 200px;
+    height: 22px;
+
+    padding: 0px;
+    margin: 0px;
+
+    padding-left: 8px;
+    padding-right: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 0px;
+    border: 1px solid var(--globalButtonBorderColor);
+    
+    box-sizing: border-box;
+    background: var(--globalButtonColor);
+
+    box-shadow:
+    inset -1px -1px var(--globalButtonDark),
+    inset 1px 1px var(--globalButtonLight);
+}
+.custom_btn_prop:hover
+{
+    background: var(--globalButtonHoverColor);
+}
+.custom_btn_prop:active
+{
+    background: var(--globalButtonClickColor);
+
+    box-shadow:
+    inset 1px 1px var(--globalButtonDark),
+    inset -1px -1px var(--globalButtonLight);
+
+    padding-bottom: 1px;
+}
+
+/* HIDE ELEMENTS */
+.custom_hidden
+{
+    visibility: hidden;
+}
+.custom_disable
+{
+    display: none;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //THE CODE BELOW IS ADDED CLOSE TO THE END OF THE PROJECT */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* CUSTOM BUTTON SIMPLE */
+.custom_btn_simple
+{
+    user-select: none;
+    font-size: 10px;
+    font-family: "Segoe UI";
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    width: 60px;
+    height: 18px;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+
+    overflow: hidden;
+
+    padding-bottom: 3px;
+
+    /* position: absolute; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 0px;
+    border: 1px solid #787878;
+    
+    box-sizing: border-box;
+    background: #dfdfdf;
+
+    box-shadow:
+    inset -1px -1px #404040,
+    inset 1px 1px #ffffff;
+}
+.custom_btn_simple:hover
+{
+    background: #cfcfcf;
+}
+.custom_btn_simple:active
+{
+    background: #bfbfbf;
+
+    box-shadow:
+    inset 1px 1px #404040,
+    inset -1px -1px #ffffff;
+
+    padding-bottom: 1px;
+}
+.container_btn_label
+{
+    display: grid;
+    grid-template-columns: auto 1fr;
+
+    align-items: center;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //THE CODE BELOW IS ADDED AFTER THE END OF THE PROJECT (FOR ALERTS) */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* -------------------------------------------------- */
+/* CUSTOM PROP */
+/* -------------------------------------------------- */
+.alert_enable
+{
+    color: white;
+    background: red;
+}
