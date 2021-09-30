@@ -6513,6 +6513,56 @@ graph.add(pinakes_PropSendBoolean00VI13);
 pinakes_LocalReadReg00VI13.connect(0, pinakes_Num2Bool00VI13, 0);
 pinakes_Num2Bool00VI13.connect(0, pinakes_Not00VI13, 0);
 pinakes_Not00VI13.connect(0, pinakes_PropSendBoolean00VI13, 0);
+
+// PINAKAS NVI37
+let pinakes_yOffsetNVI37 = 800;
+
+let pinakes_LocalReadReg00NVI37 = LiteGraph.createNode("Deos/LocalReadReg");
+pinakes_LocalReadReg00NVI37.pos = [pinakesPosition.x,pinakesPosition.y+pinakes_yOffsetNVI37+pinakas03Y];
+pinakes_LocalReadReg00NVI37.init(database_BusReadAllTRG00, "S41:R105");
+graph.add(pinakes_LocalReadReg00NVI37);
+
+let pinakes_Num2Bool00NVI37 = LiteGraph.createNode("Deos/Num2Bool");
+pinakes_Num2Bool00NVI37.pos = [pinakesPosition.x+200,pinakesPosition.y+pinakes_yOffsetNVI37+pinakas03Y];
+graph.add(pinakes_Num2Bool00NVI37);
+
+let pinakes_Not00NVI37 = LiteGraph.createNode("Deos/Not");
+pinakes_Not00NVI37.pos = [pinakesPosition.x+400,pinakesPosition.y+pinakes_yOffsetNVI37+pinakas03Y];
+graph.add(pinakes_Not00NVI37);
+
+let pinakes_PropSendBoolean00NVI37 = LiteGraph.createNode("Deos/PropSendBoolean");
+pinakes_PropSendBoolean00NVI37.pos = [pinakesPosition.x+560,pinakesPosition.y+pinakes_yOffsetNVI37+pinakas03Y];
+pinakes_PropSendBoolean00NVI37.init(broadcastDeosHandle, "m_pinak_i37");
+graph.add(pinakes_PropSendBoolean00NVI37);
+
+pinakes_LocalReadReg00NVI37.connect(0, pinakes_Num2Bool00NVI37, 0);
+pinakes_Num2Bool00NVI37.connect(0, pinakes_Not00NVI37, 0);
+pinakes_Not00NVI37.connect(0, pinakes_PropSendBoolean00NVI37, 0);
+
+// PINAKAS NVI38
+let pinakes_yOffsetNVI38 = 900;
+
+let pinakes_LocalReadReg00NVI38 = LiteGraph.createNode("Deos/LocalReadReg");
+pinakes_LocalReadReg00NVI38.pos = [pinakesPosition.x,pinakesPosition.y+pinakes_yOffsetNVI38+pinakas03Y];
+pinakes_LocalReadReg00NVI38.init(database_BusReadAllTRG00, "S41:R106");
+graph.add(pinakes_LocalReadReg00NVI38);
+
+let pinakes_Num2Bool00NVI38 = LiteGraph.createNode("Deos/Num2Bool");
+pinakes_Num2Bool00NVI38.pos = [pinakesPosition.x+200,pinakesPosition.y+pinakes_yOffsetNVI38+pinakas03Y];
+graph.add(pinakes_Num2Bool00NVI38);
+
+let pinakes_Not00NVI38 = LiteGraph.createNode("Deos/Not");
+pinakes_Not00NVI38.pos = [pinakesPosition.x+400,pinakesPosition.y+pinakes_yOffsetNVI38+pinakas03Y];
+graph.add(pinakes_Not00NVI38);
+
+let pinakes_PropSendBoolean00NVI38 = LiteGraph.createNode("Deos/PropSendBoolean");
+pinakes_PropSendBoolean00NVI38.pos = [pinakesPosition.x+560,pinakesPosition.y+pinakes_yOffsetNVI38+pinakas03Y];
+pinakes_PropSendBoolean00NVI38.init(broadcastDeosHandle, "m_pinak_i38");
+graph.add(pinakes_PropSendBoolean00NVI38);
+
+pinakes_LocalReadReg00NVI38.connect(0, pinakes_Num2Bool00NVI38, 0);
+pinakes_Num2Bool00NVI38.connect(0, pinakes_Not00NVI38, 0);
+pinakes_Not00NVI38.connect(0, pinakes_PropSendBoolean00NVI38, 0);
 //////////////////////////////////////////////////
 //#endregion MHXANOSTASIO PINAKES
 //////////////////////////////////////////////////
@@ -6813,6 +6863,56 @@ let khposPinak_Title00 = LiteGraph.createNode("Deos/Title");
 khposPinak_Title00.pos = [khposPinakPosition.x,khposPinakPosition.y+20];
 khposPinak_Title00.init("ΕΠΑΦΕΣ MODBUS ΠΡΟΣ ΠΙΝΑΚΑ ΚΗΠΟΥ ΚΑΙ ΤΙΜΕΣ.", 800);
 graph.add(khposPinak_Title00);
+
+//KHPOS I9
+let khposPinak_offsetY_i9 = 1300;
+
+let khposPinak_LocalReadRegN09 = LiteGraph.createNode("Deos/LocalReadReg");
+khposPinak_LocalReadRegN09.pos = [khposPinakPosition.x,khposPinakPosition.y+100+khposPinak_offsetY_i9];
+khposPinak_LocalReadRegN09.init(database_BusReadAllTRG00, "S42:R103");
+graph.add(khposPinak_LocalReadRegN09);
+
+let khposPinak_Num2BoolN09 = LiteGraph.createNode("Deos/Num2Bool");
+khposPinak_Num2BoolN09.pos = [khposPinakPosition.x+200,khposPinakPosition.y+100+khposPinak_offsetY_i9];
+graph.add(khposPinak_Num2BoolN09);
+
+let khposPinak_NotN09 = LiteGraph.createNode("Deos/Not");
+khposPinak_NotN09.pos = [khposPinakPosition.x+400,khposPinakPosition.y+100+khposPinak_offsetY_i9];
+graph.add(khposPinak_NotN09);
+
+let khposPinak_PropSendBooleanN09 = LiteGraph.createNode("Deos/PropSendBoolean");
+khposPinak_PropSendBooleanN09.pos = [khposPinakPosition.x+560,khposPinakPosition.y+100+khposPinak_offsetY_i9];
+khposPinak_PropSendBooleanN09.init(broadcastDeosHandle, "k_pinak_i9");
+graph.add(khposPinak_PropSendBooleanN09);
+
+khposPinak_LocalReadRegN09.connect(0, khposPinak_Num2BoolN09, 0);
+khposPinak_Num2BoolN09.connect(0, khposPinak_NotN09, 0);
+khposPinak_NotN09.connect(0, khposPinak_PropSendBooleanN09, 0);
+
+//KHPOS I10
+let khposPinak_offsetY_i10 = 1400;
+
+let khposPinak_LocalReadRegN10 = LiteGraph.createNode("Deos/LocalReadReg");
+khposPinak_LocalReadRegN10.pos = [khposPinakPosition.x,khposPinakPosition.y+100+khposPinak_offsetY_i10];
+khposPinak_LocalReadRegN10.init(database_BusReadAllTRG00, "S42:R104");
+graph.add(khposPinak_LocalReadRegN10);
+
+let khposPinak_Num2BoolN10 = LiteGraph.createNode("Deos/Num2Bool");
+khposPinak_Num2BoolN10.pos = [khposPinakPosition.x+200,khposPinakPosition.y+100+khposPinak_offsetY_i10];
+graph.add(khposPinak_Num2BoolN10);
+
+let khposPinak_NotN10 = LiteGraph.createNode("Deos/Not");
+khposPinak_NotN10.pos = [khposPinakPosition.x+400,khposPinakPosition.y+100+khposPinak_offsetY_i10];
+graph.add(khposPinak_NotN10);
+
+let khposPinak_PropSendBooleanN10 = LiteGraph.createNode("Deos/PropSendBoolean");
+khposPinak_PropSendBooleanN10.pos = [khposPinakPosition.x+560,khposPinakPosition.y+100+khposPinak_offsetY_i10];
+khposPinak_PropSendBooleanN10.init(broadcastDeosHandle, "k_pinak_i10");
+graph.add(khposPinak_PropSendBooleanN10);
+
+khposPinak_LocalReadRegN10.connect(0, khposPinak_Num2BoolN10, 0);
+khposPinak_Num2BoolN10.connect(0, khposPinak_NotN10, 0);
+khposPinak_NotN10.connect(0, khposPinak_PropSendBooleanN10, 0);
 
 //KHPOS I6
 let khposPinak_offsetY_i6 = 0;
