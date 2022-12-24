@@ -34,5 +34,5 @@ connectButton.onclick = async () => {
         // console.log("Sent output report " + outputReportId);
         });
     });
-    });
+    // });
 }
