@@ -25,6 +25,7 @@ navigator.hid.addEventListener("disconnect", handleDisconnectedDevice);
 connectButton.onclick = async () => {
 
     navigator.hid.requestDevice(requestParams).then((devices) => {
+      console.log(devices);
     if (devices.length == 0) return;
     devices[0].open().then(() => {
         console.log("Opened device: " + device.productName);
