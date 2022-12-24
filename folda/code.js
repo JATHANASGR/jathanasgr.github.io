@@ -1,3 +1,5 @@
+console.log("HAHAHA!");
+
 const connectButton = document.getElementById('connectButton');
 const disconnectButton = document.getElementById('disconnectButton');
 const colourButton = document.getElementById('colourButton');
