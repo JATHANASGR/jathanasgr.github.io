@@ -1,8 +1,9 @@
 const connectButton = document.getElementById('connectButton');
 
-let deviceFilter = { vendorId: 0x5345, productId: 0x1234 };
+// let deviceFilter = { vendorId: 0x5345, productId: 0x1234 };
+let deviceFilter = { vendorId: 0x5345 };
 let requestParams = { filters: [deviceFilter] };
-let outputReportId = 0x01;
+// let outputReportId = 0x01;
 let outputReport = new Uint8Array([42]);
 
 function handleConnectedDevice(e) {
@@ -27,9 +28,9 @@ connectButton.onclick = async () => {
     if (devices.length == 0) return;
     devices[0].open().then(() => {
         console.log("Opened device: " + device.productName);
-        device.addEventListener("inputreport", handleInputReport);
-        device.sendReport(outputReportId, outputReport).then(() => {
-        console.log("Sent output report " + outputReportId);
+        // device.addEventListener("inputreport", handleInputReport);
+        // device.sendReport(outputReportId, outputReport).then(() => {
+        // console.log("Sent output report " + outputReportId);
         });
     });
     });
