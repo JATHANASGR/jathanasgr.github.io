@@ -1,6 +1,6 @@
 let utf8Encode = new TextEncoder();
-let test = ':CH1:DISPlay ON'
-let test_byte = utf8Encode.encode("test");
+let test = ':CH1:DISPlay OFF'
+let test_byte = utf8Encode.encode(test);
 
 const options = {
     filters: [{vendorId: 0x5345}]
