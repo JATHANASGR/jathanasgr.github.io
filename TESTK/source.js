@@ -12,12 +12,12 @@ connectButton.onclick = async () => {
     // console.log(device);
     await device.open();
     
-    if (usbDevice.configuration === null)
-        await usbDevice.selectConfiguration(1);
+    // if (usbDevice.configuration === null)
+        // await usbDevice.selectConfiguration(1);
 
-    await usbDevice.claimInterface(0);
-    await device.close();
-    // await device.transferOut(1, test_byte);
+    await device.claimInterface(0);
+    // await device.close();
+    await device.transferOut(1, test_byte);
 
     // console.log("Pat!");
 
