@@ -1,0 +1,106 @@
+#canvas
+{
+    border: 1px solid #888888;
+}
+body
+{
+    background-color: rgb(243, 243, 243);
+    margin: 0px;
+}
+#shadow
+{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    
+    position: absolute;
+    top: 435px; left: 95px;
+    
+    background-color: rgb(255, 0, 0);
+    background-image: linear-gradient(grey, white);
+}
+#knob
+{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    
+    position: absolute;
+    top: 440px; left: 100px;
+    
+    background-image: radial-gradient(rgb(240, 240, 240), rgb(240, 240, 240), black);
+    
+    overflow: hidden;
+}
+#indicatorA
+{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+
+    position: absolute;
+
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: rgb(240, 240, 240);
+
+    box-shadow: inset 0 0 2px black;
+    
+    pointer-events: none;
+}
+#indicatorB
+{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+
+    position: absolute;
+
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: rgb(240, 240, 240);
+
+    box-shadow: inset 0 0 2px black;
+    
+    pointer-events: none;
+}
+#indicatorC
+{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+
+    position: absolute;
+
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+
+    background-color: rgb(240, 240, 240);
+
+    box-shadow: inset 0 0 2px black;
+    
+    pointer-events: none;
+}
+#indicatorD
+{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+
+    position: absolute;
+
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+
+    background-color: rgb(240, 240, 240);
+
+    box-shadow: inset 0 0 2px black;
+    
+    pointer-events: none;
+}
